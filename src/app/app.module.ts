@@ -7,7 +7,7 @@ import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component'
 import { LoginComponent } from './pages/login/login.component'
 import { ContactComponent } from './pages/contact/contact.component'
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/home/home.component'
 import { NavbarComponent } from './components/utils/navbar/navbar.component'
 
 @NgModule({
