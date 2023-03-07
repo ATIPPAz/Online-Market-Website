@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/login/login.component'
 import { ContactComponent } from './pages/contact/contact.component'
 import { HomeComponent } from './pages/home/home.component'
 import { NavbarComponent } from './components/utils/navbar/navbar.component'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { NavbarComponent } from './components/utils/navbar/navbar.component'
     HomeComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
