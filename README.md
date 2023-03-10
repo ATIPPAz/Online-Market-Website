@@ -1,27 +1,36 @@
-# OnlineMarket
+#### โครงสร้างโปรเจค
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+## Components
 
-## Development server
+components ไฟล์สำหรับเก็บ componentทั่วไป ต่างๆที่เรียกไปใช้ใน page เเต่ละ page
+วิธี generate ไฟล์ ng g c components/ชื่อ components
+components/utils เป็นที่สำหรับเก็บ component กลางไว้ใช้ร่วมกับ component หรือ page อื่นๆ
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## pages
 
-## Code scaffolding
+โฟลเดอร์นี้ใช้สำหรับเป็น page หลักเช่น หน้า home , หน้า contact เเล้วดึง component ย่อยๆมาใส่ลงใน pages
+วิธี generate ไฟล์ ng g c pages/ชื่อ page เช่น homePage (ทีมี Page ติดหลังเพื่อป้องกันชื่อไฟล์ชนกับ component)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## services
 
-## Build
+ใช้สำหรับเก็บ service ทั้งหมดรอนำไปใช้งาน
+วิธี generate ไฟล์ ng g s services/ชื่อโฟลเดอร์ของservice/ชื่อ service.ts หรือ ng g s services/ชื่อ service.ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## layouts
 
-## Running unit tests
+ใช้สำหรับเก็บ layout ต่างๆ เช่น layout ทั่วไป (default layout ที่มี navbar , login layout ไม่มี navbar สามารถไปตบเเต่งเพิ่มได้)
+วิธี generate ไฟล์ ng g c layouts/ชื่อ components ของlayout
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## interfaces
 
-## Running end-to-end tests
+ใช้สำหรับเก็บ interface type ทุกอันเพื่อนำไปใช้ต่อ
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## app-routing
 
-## Further help
+ใช้สำหรับจัดการ layout เเละ component ต่างๆ ว่า page ไหนจะใช้ layout ไหน
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## modules
+
+ใช้ สำหรับเก็บ function กลางเพื่อให้คนอื่นๆเรียกใช้ได้
+
+## โฟลเดอร์ไหนไม่ใช้ก็ลบทิ้งงงงงง
