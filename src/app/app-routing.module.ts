@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component'
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component'
-import { HomeComponent } from './pages/home/home.component'
-import { ContactComponent } from './pages/contact/contact.component'
-import { LoginComponent } from './pages/login/login.component'
+import { HomeComponentPage } from './pages/home-page/home-page.component'
+import { ContactComponentPage } from './pages/contact-page/contact-page.component'
+import { LoginComponentPage } from './pages/login-page/login-page.component'
+import { OtherPageComponentPage } from './pages/other-page/other-page.component'
 
 const routes: Routes = [
   // app routes
@@ -19,11 +20,15 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        component: HomeComponent,
+        component: HomeComponentPage,
       },
       {
         path: 'contact',
-        component: ContactComponent,
+        component: ContactComponentPage,
+      },
+      {
+        path: 'other',
+        component: OtherPageComponentPage,
       },
       // {
       //   path: 'contact',
@@ -41,7 +46,7 @@ const routes: Routes = [
     children: [
       {
         path: 'login',
-        component: LoginComponent,
+        component: LoginComponentPage,
       },
     ],
   },
