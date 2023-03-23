@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { ApiModule } from './modules/api.module'
+import { Api } from './modules/api'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http'
 import { HomeComponent } from './components/home/home.component'
 import { ContactComponent } from './components/contact/contact.component'
 import { LoginComponent } from './components/login/login.component'
-import { OtherComponent } from './components/other/other.component'
+import { OtherComponent } from './components/other/other.component';
+import { CarouselComponent } from './components/utils/carousel/carousel.component';
+import { RecommendShopComponent } from './components/recommend-shop/recommend-shop.component'
 
 @NgModule({
   declarations: [
@@ -34,9 +38,11 @@ import { OtherComponent } from './components/other/other.component'
     ContactComponentPage,
     OtherComponent,
     OtherPageComponentPage,
+    CarouselComponent,
+    RecommendShopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  providers: [ApiModule, Api],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
