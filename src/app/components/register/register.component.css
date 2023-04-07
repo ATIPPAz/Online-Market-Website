@@ -2,10 +2,42 @@
   margin-bottom: 16px;
 }
 
+.logo-gap {
+  margin-bottom: 16px;
+  margin-top: 48px;
+}
+
 .button {
   border-radius: 10px;
   padding: 12px 64px 12px 64px;
   background-color: #5F1E03;
   color: #ffffff;
   border: none;
+}
+
+@media (max-width: 575.98px) {
+  .register-container {
+    /* width: 200px; */
+  }
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .register-container {
+    width: 450px
+  }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .register-container {
+    width: 450px
+  }
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .register-container {
+    width: 450px
+  }
 }
