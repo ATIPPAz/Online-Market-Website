@@ -6,6 +6,8 @@ import { HomeComponentPage } from './pages/home-page/home-page.component'
 import { ContactComponentPage } from './pages/contact-page/contact-page.component'
 import { LoginComponentPage } from './pages/login-page/login-page.component'
 import { OtherPageComponentPage } from './pages/other-page/other-page.component'
+import { RegisterComponentPage } from './pages/register-page/register-page.component'
+import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component'
 
 const routes: Routes = [
   // app routes
@@ -47,6 +49,16 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponentPage,
+      },
+    ],
+  },
+  {
+    path: '',
+    component: BlankLayoutComponent,
+    children: [
+      {
+        path: 'register',
+        component: RegisterComponentPage,
       },
     ],
   },
