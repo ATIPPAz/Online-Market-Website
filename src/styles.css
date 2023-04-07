@@ -8,3 +8,11 @@ body {
   background: #f4f4f4;
   border-radius: 10px
 }
+
+.main-color {
+  color: #5F1E03;
+}
+
+.bg-main-color {
+  background-color: #5F1E03;
+}
