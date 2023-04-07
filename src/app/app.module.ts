@@ -24,8 +24,9 @@ import { LoginComponent } from './components/login/login.component'
 import { OtherComponent } from './components/other/other.component'
 import { CarouselComponent } from './components/utils/carousel/carousel.component'
 import { RecommendShopComponent } from './components/recommend-shop/recommend-shop.component'
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './components/register/register.component'
 import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component'
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.compon
     RecommendShopComponent,
     RegisterComponent,
     BlankLayoutComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ApiModule, Api],
