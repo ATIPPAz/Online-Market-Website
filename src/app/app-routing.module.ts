@@ -44,7 +44,7 @@ const routes: Routes = [
   // login routes
   {
     path: '',
-    component: LoginLayoutComponent,
+    component: BlankLayoutComponent,
     children: [
       {
         path: 'login',
