@@ -1,6 +1,7 @@
 /* mobile */
 @media (max-width: 575.98px) {
   .box {
+    min-height: 700px;
     margin: 32px 16px
   }
 }
@@ -8,7 +9,7 @@
 /* tablet or ipad */
 @media (min-width: 768px) {
   .box {
-
+    min-height: 700px;
     margin: 32px 64px
   }
 }
@@ -16,7 +17,7 @@
 /* mac */
 @media (min-width: 1199.98px) {
   .box {
-
+    min-height: 700px;
     margin: 32px 120px
   }
 }
@@ -25,6 +26,6 @@
 @media (min-width: 1399.98px) {
   .box {
     margin: 16px 120px 32px 120px;
-
+    min-height: 700px;
   }
 }
