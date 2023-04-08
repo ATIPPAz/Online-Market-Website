@@ -8,6 +8,7 @@ import { LoginComponentPage } from './pages/login-page/login-page.component'
 import { OtherPageComponentPage } from './pages/other-page/other-page.component'
 import { RegisterComponentPage } from './pages/register-page/register-page.component'
 import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component'
+import { MarketPageComponent } from './pages/market-page/market-page.component'
 
 const routes: Routes = [
   // app routes
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponentPage,
+      },
+      {
+        path: 'market',
+        component: MarketPageComponent,
       },
       {
         path: 'other',

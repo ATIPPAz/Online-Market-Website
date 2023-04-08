@@ -29,7 +29,8 @@ import { OtherComponent } from './components/other/other.component'
 import { CarouselComponent } from './components/utils/carousel/carousel.component'
 import { RecommendShopComponent } from './components/recommend-shop/recommend-shop.component'
 import { RegisterComponent } from './components/register/register.component'
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/utils/footer/footer.component';
+import { MarketPageComponent } from './pages/market-page/market-page.component'
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { FooterComponent } from './components/footer/footer.component'
     RegisterComponent,
     BlankLayoutComponent,
     FooterComponent,
+    MarketPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
