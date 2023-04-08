@@ -31,7 +31,8 @@ import { RecommendShopComponent } from './components/recommend-shop/recommend-sh
 import { RegisterComponent } from './components/register/register.component'
 import { FooterComponent } from './components/utils/footer/footer.component';
 import { MarketPageComponent } from './pages/market-page/market-page.component';
-import { TopshopComponent } from './components/topshop/topshop.component'
+import { TopshopComponent } from './components/topshop/topshop.component';
+import { CardTopshopComponent } from './components/card-topshop/card-topshop.component'
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { TopshopComponent } from './components/topshop/topshop.component'
     FooterComponent,
     MarketPageComponent,
     TopshopComponent,
+    CardTopshopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
