@@ -1,8 +1,8 @@
 .footer-banner {
-  background-color: #f9733a;
+  background-color: #ffffff;
   height: 60px;
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
 }
@@ -10,10 +10,14 @@
 .icon-container {
   display: flex;
   gap: 4px;
-
 }
 
 .banner {
+  background-color: white;
+  padding: 64px 64px 32px 64px;
+}
+
+.copyright {
   background-color: #5F1E03;
   width: 100%;
   height: 60px;
@@ -48,8 +52,7 @@
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0.005em;
-  padding: 0px 0px 24px 32px;
-
+  /* padding: 0px 0px 24px 32px; */
 }
 
 .logo {
@@ -60,13 +63,5 @@
   font-size: 64px;
   line-height: 120%;
   letter-spacing: 0.003em;
-}
-
-.text-banner {
-  color: white;
-  font-weight: bold;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* vertical-align: middle; */
+  padding-left: 56px;
 }

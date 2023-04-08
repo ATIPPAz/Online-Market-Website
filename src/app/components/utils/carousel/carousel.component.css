@@ -5,6 +5,11 @@ img {
   /* opacity: 0.9; */
 }
 
+.carousel-box {
+  background-color: white;
+  padding: 32px 32px;
+}
+
 .carousel-caption {
   color: white;
   background-color: rgb(62, 62, 62);

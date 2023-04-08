@@ -1,7 +1,6 @@
 /* mobile */
 @media (max-width: 575.98px) {
   .box {
-
     margin: 32px 16px
   }
 }
@@ -25,7 +24,7 @@
 /* pc */
 @media (min-width: 1399.98px) {
   .box {
-    margin: 32px 120px;
+    margin: 16px 120px 32px 120px;
 
   }
 }
