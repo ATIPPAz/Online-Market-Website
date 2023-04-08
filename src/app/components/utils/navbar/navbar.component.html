@@ -9,10 +9,10 @@
           class="col-3 d-flex align-items-center justify-content-between menu-list"
         >
           <a href="/market" class="my-auto">Market</a>
-          <a href="">Shop</a>
-          <a href="">About</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
+          <a href="/shop">Shop</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
         </div>
         <div class="col-7">
           <div class="input-group">
@@ -43,11 +43,26 @@
             class="icon"
             alt="cart"
           />
-          <img
-            src="../../../../assets/icons/UserProfile.svg"
-            class="icon"
-            alt="profile"
-          />
+          <div>
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../../../../assets/icons/UserProfile.svg"
+                class="icon"
+                alt="profile"
+              />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="/login">login</a></li>
+              <li><a class="dropdown-item" href="/register">register </a></li>
+              <li><a class="dropdown-item" href="/">logout </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
