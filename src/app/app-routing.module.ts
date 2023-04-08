@@ -9,6 +9,7 @@ import { OtherPageComponentPage } from './pages/other-page/other-page.component'
 import { RegisterComponentPage } from './pages/register-page/register-page.component'
 import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component'
 import { MarketPageComponent } from './pages/market-page/market-page.component'
+import { NoPageComponent } from './components/no-page/no-page.component'
 
 const routes: Routes = [
   // app routes
@@ -64,6 +65,16 @@ const routes: Routes = [
       {
         path: 'register',
         component: RegisterComponentPage,
+      },
+    ],
+  },
+  {
+    path: '',
+    component: BlankLayoutComponent,
+    children: [
+      {
+        path: '**',
+        component: NoPageComponent,
       },
     ],
   },
