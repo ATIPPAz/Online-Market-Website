@@ -1,5 +1,5 @@
 export interface TopShop {
-  marketId: string
+  shopName: string
   marketTitle: string
   marketImg: string
 }
