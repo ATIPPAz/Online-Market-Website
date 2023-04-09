@@ -33,9 +33,9 @@ import { FooterComponent } from './components/utils/footer/footer.component';
 import { MarketPageComponent } from './pages/market-page/market-page.component';
 import { TopshopComponent } from './components/topshop/topshop.component';
 import { CardTopshopComponent } from './components/card-topshop/card-topshop.component';
-
+import { NoPageComponent } from './components/no-page/no-page.component';
+import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
 import {MarketComponent } from './components/market/market.component'
-import { NoPageComponent } from './components/no-page/no-page.component'
 
 
 @NgModule({
@@ -61,12 +61,9 @@ import { NoPageComponent } from './components/no-page/no-page.component'
     MarketPageComponent,
     TopshopComponent,
     CardTopshopComponent,
-
     MarketComponent,
-
-
     NoPageComponent,
-
+    MarketIdPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
