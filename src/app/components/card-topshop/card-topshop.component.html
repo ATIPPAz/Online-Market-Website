@@ -1,12 +1,18 @@
-<div class="card">
-  <!-- <img src="https://s.isanook.com/tr/0/ui/281/1409593/top-imag…-love-love-shutterstockcom-630x420_1519805077.jpg" alt="Avatar" style="width:100%"> -->
-  <img
-    src="https://mpics.mgronline.com/pics/Images/558000007916201.JPEG"
-    alt="ภาพโดยรวมของตลาดรถไฟ รัชดา "
-    style="width: 100%"
-  />
-  <div class="container">
-    <p>ตลาดนัดสวนจตุจักร</p>
-    <h4><b>Shop 1</b></h4>
+<div class="card p-4" style="width: 400px; height: 650px">
+  <img [src]="img" class="w-100 h-100" [alt]="title + ' image'" />
+  <div class="card-body spacer-box p-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col p-0">
+          <a href="/">
+            <img src="../../../assets/icons/topshopButton.svg" alt="" />
+          </a>
+        </div>
+        <div class="col p-0">
+          <h5 class="card-title text-title">{{ title }}</h5>
+          <p class="card-text">Shop {{ id }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
