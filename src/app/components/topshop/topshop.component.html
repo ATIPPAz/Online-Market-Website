@@ -1,27 +1,16 @@
-<h2 Align=center>TOP SHOP</h2>
-
+<h2 class="text-center title">Top Shop</h2>
+<br />
 <div class="container-fulid">
-     <div class="row">
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
-    </div><br>
-    <div class="row">
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
-        <div class="col-md-4">
-            <app-card-topshop></app-card-topshop>
-        </div>
+  <div class="row gy-4 justify-content-start">
+    <div
+      *ngFor="let item of data"
+      class="col-md-6 col-12 col-sm-6 col-xl-3 col-lg-3"
+    >
+      <app-card-topshop
+        [id]="item.marketId"
+        [img]="item.marketImg"
+        [title]="item.marketTitle"
+      ></app-card-topshop>
     </div>
-
+  </div>
 </div>
