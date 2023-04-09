@@ -35,6 +35,8 @@ import { TopshopComponent } from './components/topshop/topshop.component';
 import { CardTopshopComponent } from './components/card-topshop/card-topshop.component';
 import { NoPageComponent } from './components/no-page/no-page.component';
 import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
+import {MarketComponent } from './components/market/market.component'
+
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.com
     MarketPageComponent,
     TopshopComponent,
     CardTopshopComponent,
+    MarketComponent,
     NoPageComponent,
     MarketIdPageComponent,
   ],
