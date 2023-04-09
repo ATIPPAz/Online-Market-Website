@@ -1,4 +1,4 @@
-.MARKET{
+.MARKET {
     position: absolute;
     width: 551px;
     height: 58px;
@@ -6,20 +6,15 @@
     top: 346px;
 }
 
-.Heading:H2 Bold{
+.Heading {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
 }
-/* identical to box height, or 58px{
-    text-align: center;
-    letter-spacing: 0.005em;
-} */
 
-Light/Text Color/Title{
+
+Light/Text Color/Title {
     color: #11142D;
 }
-
-
