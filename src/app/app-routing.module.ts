@@ -10,6 +10,7 @@ import { RegisterComponentPage } from './pages/register-page/register-page.compo
 import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component'
 import { MarketPageComponent } from './pages/market-page/market-page.component'
 import { NoPageComponent } from './components/no-page/no-page.component'
+import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
 
 const routes: Routes = [
   // app routes
@@ -33,6 +34,10 @@ const routes: Routes = [
       {
         path: 'market',
         component: MarketPageComponent,
+      },
+      {
+        path: 'market/:id',
+        component: MarketIdPageComponent,
       },
       {
         path: 'other',
