@@ -8,34 +8,44 @@ import { TopShop } from '../../interfaces/topShopInterface'
 export class TopshopComponent {
   data: TopShop[] = [
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
+      marketImg: 'https://img.wongnai.com/p/400x0/2019/01/15/aa7b249dc9a545fda16ff07f0a193737.jpg',
       marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '1',
+      shopName: 'ร้านเจ๊อึ่ง',
     },
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
+      marketImg: 'https://img.wongnai.com/p/400x0/2021/07/11/1374a1704200474a9b8bb3c4ca2f60d1.jpg',
       marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '2',
+      shopName: 'ชิ้นปั่นสด',
     },
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
+      marketImg: 'https://img.wongnai.com/p/400x0/2020/07/28/b48698d0987f48afa1067ea3e1352f9d.jpg',
       marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '3',
+      shopName: 'Miruku Pure Milk',
     },
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
-      marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '4',
+      marketImg: 'https://img.wongnai.com/p/400x0/2016/12/25/31117e65e54448f8baf472b70d96a5ad.jpg',
+      marketTitle: 'ตลาดเลียบด่วน',
+      shopName: 'Wantong Cafe',
     },
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
-      marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '5',
+      marketImg: 'https://img.wongnai.com/p/400x0/2017/02/20/12f9eac5d4b7424b988fceab76b6f8a5.jpg',
+      marketTitle: 'ตลาดเลียบด่วน',
+      shopName: 'Come Waan',
     },
     {
-      marketImg: 'https://mpics.mgronline.com/pics/Images/558000007916201.JPEG',
-      marketTitle: 'ตลาดนัดสวนจตุจักร',
-      marketId: '6',
+      marketImg: 'https://img.wongnai.com/p/400x0/2020/12/12/a42734374e174c75a19b8337aed83177.jpg',
+      marketTitle: 'ตลาดเลียบด่วน',
+      shopName: 'bfox_kitchen',
+    },
+    {
+      marketImg: 'https://img.wongnai.com/p/400x0/2015/08/27/1e7f7b10ac7345c2a46b96081913387a.jpg',
+      marketTitle: 'ตลาดนัดรถไฟศรีนครินทร์',
+      shopName: 'ไอติมหม้อไฟยศเส',
+    },
+    {
+      marketImg: 'https://img.wongnai.com/p/400x0/2018/12/20/6d2c1b63c92c48d4b9104a02c9886a1e.jpg',
+      marketTitle: 'ตลาดนัดรถไฟศรีนครินทร์',
+      shopName: 'ฝุ่นตลบ',
     },
   ]
 }
