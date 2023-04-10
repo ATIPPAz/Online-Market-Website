@@ -11,7 +11,12 @@
   cursor: pointer;
 }
 
-.menu-list a {
+.form-control::placeholder {
+  color: #9a9ab0;
+  /* เปลี่ยนเป็นสีแดง */
+}
+
+.navlink {
   font-family: 'DM Sans';
   border-bottom: 2px solid transparent;
   padding-bottom: 6px;
@@ -23,6 +28,11 @@
   letter-spacing: 0.005em;
   text-decoration: none;
   color: #11142D;
+}
+
+.sf {
+  color: #919191;
+  margin-bottom: 6px;
 }
 
 #dropdownMenuButton1 {
@@ -37,12 +47,13 @@
   left: 50%;
 }
 
-.menu-list a:hover {
+.navlink:hover {
   color: #6d2100;
-
   border-bottom: 5px solid #5F1E03;
   padding-bottom: 4px;
 }
+
+
 
 /* mobile */
 @media (max-width: 575.98px) {
@@ -59,7 +70,8 @@
 
   .logo a {
     margin-left: 28px;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 39px;
@@ -85,7 +97,8 @@
 
   .logo a {
     margin-left: 70px;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 39px;
@@ -111,7 +124,8 @@
 
   .logo a {
     margin-left: 120px;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 39px;
@@ -137,7 +151,7 @@
 
   .logo a {
     margin-left: 120px;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 39px;
