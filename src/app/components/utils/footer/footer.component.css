@@ -58,13 +58,59 @@
   /* padding: 0px 0px 24px 32px; */
 }
 
-.logo {
-  color: #5F1E03;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 120%;
-  letter-spacing: 0.003em;
-  padding-left: 56px;
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .logo {
+    color: #5F1E03;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    padding-left: 0px;
+  }
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .logo {
+    color: #5F1E03;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    /* padding-left: 56px; */
+  }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .logo {
+    color: #5F1E03;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    padding-left: 56px;
+  }
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .logo {
+    color: #5F1E03;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    padding-left: 56px;
+  }
 }
