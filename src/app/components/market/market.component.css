@@ -7,15 +7,102 @@
 }
 
 .Heading {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
 }
-.margin{
-    margin-top: 80px;
-}
+
+
+
 Light/Text Color/Title {
     color: #080913;
+}
+
+.box {
+    font-family: 'DM Sans', sans-serif;
+
+
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+    .canvas {
+        padding: 64px 16px 64px 16px;
+    }
+
+    .text-detail {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin-top: 24px;
+    }
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+    .text-detail {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin-top: 24px;
+    }
+
+    .canvas {
+        padding: 64px 84px 64px 84px;
+    }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+    .text-detail {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin-top: 24px;
+    }
+
+    .canvas {
+        padding: 64px 120px 64px 120px;
+    }
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+    .canvas {
+        padding: 64px 120px 64px 120px;
+    }
+
+    .text-detail {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin-top: 24px;
+    }
 }
