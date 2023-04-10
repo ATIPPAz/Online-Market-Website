@@ -1,5 +1,10 @@
 <div class="card p-4 card-box">
-  <img [src]="img" class="w-100 h-100" [alt]="title + ' image'" />
+  <img
+    [src]="img"
+    class="h-100"
+    style="object-fit: cover"
+    [alt]="title + ' image'"
+  />
   <div class="card-body spacer-box p-0">
     <div class="container-fluid">
       <div class="row">
@@ -10,7 +15,7 @@
         </div>
         <div class="col-7 p-0">
           <h5 class="text-title text-truncate text-start">{{ title }}</h5>
-          <p class="card-text text-truncate text-start">{{ id }}</p>
+          <p class="card-text text-truncate text-start">{{ name }}</p>
         </div>
       </div>
     </div>
