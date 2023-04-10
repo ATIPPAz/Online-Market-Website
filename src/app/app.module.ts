@@ -37,7 +37,9 @@ import { NoPageComponent } from './components/no-page/no-page.component';
 import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
 import {MarketComponent } from './components/market/market.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
-import { AboutUsComponent } from './components/about-us/about-us.component'
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { BlogComponent } from './components/blog/blog.component'
 
 
 @NgModule({
@@ -68,6 +70,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component'
     MarketIdPageComponent,
     AboutUsPageComponent,
     AboutUsComponent,
+    BlogPageComponent,
+    BlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
