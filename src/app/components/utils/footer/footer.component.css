@@ -60,7 +60,8 @@
 @media (max-width: 575.98px) {
   .logo {
     color: #5F1E03;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -79,7 +80,8 @@
 @media (min-width: 768px) {
   .logo {
     color: #5F1E03;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 72px;
@@ -98,7 +100,8 @@
 @media (min-width: 1199.98px) {
   .logo {
     color: #5F1E03;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -118,7 +121,8 @@
 @media (min-width: 1399.98px) {
   .logo {
     color: #5F1E03;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 64px;

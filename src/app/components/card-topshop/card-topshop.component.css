@@ -1,8 +1,53 @@
 /* mobile */
 @media (max-width: 575.98px) {
   .card-box {
-    width: 100%;
-    height: 650px
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+  }
+
+  .text-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+  }
+
+  .nextbtn {
+    width: 20px;
+    height: 20px
+  }
+
+  .spacer-box {
+    margin-top: 14px;
+  }
+
+  .card-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .text-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
   }
 }
 
@@ -10,7 +55,36 @@
 @media (min-width: 768px) {
   .card-box {
     width: 100%;
-    height: 650px
+    height: 650px;
+    padding: 24px;
+  }
+
+  .spacer-box {
+    margin-top: 40px;
+  }
+
+  .card-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .text-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
   }
 }
 
@@ -18,7 +92,36 @@
 @media (min-width: 1199.98px) {
   .card-box {
     width: 350px;
-    height: 600px
+    height: 600px;
+    padding: 24px;
+  }
+
+  .spacer-box {
+    margin-top: 40px;
+  }
+
+  .card-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .text-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
   }
 }
 
@@ -26,40 +129,35 @@
 @media (min-width: 1399.98px) {
   .card-box {
     width: 400px;
-    height: 650px
+    height: 650px;
+    padding: 24px;
   }
-}
 
-.spacer-box {
-  margin-top: 40px;
-}
+  .spacer-box {
+    margin-top: 40px;
+  }
 
+  .card-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+  }
 
+  .card {
+    border: none;
+    border-radius: 0px;
+  }
 
-
-
-
-
-.card-text {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 120%;
-  letter-spacing: 0.005em;
-}
-
-.card {
-  border: none;
-  border-radius: 0px;
-}
-
-.text-title {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-  letter-spacing: 0.005em;
-  color: #9A9AB0;
+  .text-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+  }
 }

@@ -1,3 +1,34 @@
 .text-search {
   font-size: 24px;
 }
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .box {
+    padding: 0px 32px;
+  }
+
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .box {
+    padding: 0px 60px;
+  }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .box {
+    padding: 0px 120px;
+  }
+
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .box {
+    padding: 0px 120px;
+  }
+
+}
