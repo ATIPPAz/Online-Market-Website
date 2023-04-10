@@ -8,5 +8,5 @@ export class CardTopshopComponent {
   @Input('img') img: string =
     'https://ird.rmuti.ac.th/2020/world/upload/post/picture/thumb/IRD010221C00006/noimg.png'
   @Input('title') title: string = 'market'
-  @Input('id') id: string = ''
+  @Input('name') name: string = ''
 }

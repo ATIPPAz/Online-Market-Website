@@ -1,0 +1,21 @@
+.MARKET {
+    position: absolute;
+    width: 551px;
+    height: 58px;
+    left: 439px;
+    top: 346px;
+}
+
+.Heading {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+}
+.margin{
+    margin-top: 80px;
+}
+Light/Text Color/Title {
+    color: #080913;
+}

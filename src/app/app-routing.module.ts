@@ -11,7 +11,7 @@ import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.compon
 import { MarketPageComponent } from './pages/market-page/market-page.component'
 import { NoPageComponent } from './components/no-page/no-page.component'
 import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
-
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 const routes: Routes = [
   // app routes
   {
@@ -42,6 +42,10 @@ const routes: Routes = [
       {
         path: 'other',
         component: OtherPageComponentPage,
+      },
+      {
+        path: 'about',
+        component: AboutUsPageComponent,
       },
       // {
       //   path: 'contact',
