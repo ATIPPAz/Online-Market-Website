@@ -2,20 +2,10 @@
   height: 90px !important;
 }
 
-.logo a {
-  margin-left: 120px;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 39px;
-  line-height: 120%;
-  letter-spacing: 0.005em;
-  color: #5F1E03;
-}
 
-.menu {
+/* .menu {
   margin: 32px 100px 0px 100px;
-}
+} */
 
 .icon {
   cursor: pointer;
@@ -23,7 +13,9 @@
 
 .menu-list a {
   font-family: 'DM Sans';
-
+  border-bottom: 2px solid transparent;
+  padding-bottom: 6px;
+  transition: all 0.1s ease;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -31,5 +23,127 @@
   letter-spacing: 0.005em;
   text-decoration: none;
   color: #11142D;
+}
+
+#dropdownMenuButton1 {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  right: auto;
+  width: fit-content;
+  left: 50%;
+}
+
+.menu-list a:hover {
+  color: #6d2100;
+
+  border-bottom: 5px solid #5F1E03;
+  padding-bottom: 4px;
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .menu {
+    margin: 0px;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: auto;
+    width: fit-content;
+    left: 50%;
+  }
+
+  .logo a {
+    margin-left: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .menu {
+    margin: 16px 48px 0px 48px;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: auto;
+    width: fit-content;
+    left: 75%;
+  }
+
+  .logo a {
+    margin-left: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .menu {
+    margin: 16px 100px 0px 100px;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: auto;
+    width: fit-content;
+    left: 85%;
+  }
+
+  .logo a {
+    margin-left: 120px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .menu {
+    margin: 32px 100px 0px 100px;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: auto;
+    width: fit-content;
+    left: 86%;
+  }
+
+  .logo a {
+    margin-left: 120px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
 
 }
