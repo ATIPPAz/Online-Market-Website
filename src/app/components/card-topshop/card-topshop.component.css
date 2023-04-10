@@ -1,10 +1,10 @@
 /* mobile */
 @media (max-width: 575.98px) {
   .card-box {
-    width: 110px;
+    width: 100px;
     height: 200px;
     object-fit: cover;
-    padding: 8px;
+    padding: 10px;
   }
 
   .text-title {
