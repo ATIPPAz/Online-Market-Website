@@ -2,16 +2,6 @@
   height: 90px !important;
 }
 
-.logo a {
-  margin-left: 120px;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 39px;
-  line-height: 120%;
-  letter-spacing: 0.005em;
-  color: #5F1E03;
-}
 
 /* .menu {
   margin: 32px 100px 0px 100px;
@@ -66,6 +56,18 @@
     width: fit-content;
     left: 50%;
   }
+
+  .logo a {
+    margin-left: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
 }
 
 /* tablet or ipad */
@@ -80,6 +82,18 @@
     width: fit-content;
     left: 75%;
   }
+
+  .logo a {
+    margin-left: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
 }
 
 /* mac */
@@ -94,6 +108,18 @@
     width: fit-content;
     left: 85%;
   }
+
+  .logo a {
+    margin-left: 120px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
 }
 
 /* pc */
@@ -108,4 +134,16 @@
     width: fit-content;
     left: 86%;
   }
+
+  .logo a {
+    margin-left: 120px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #5F1E03;
+  }
+
 }
