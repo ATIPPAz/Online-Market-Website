@@ -43,6 +43,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ProduceComponent } from './components/produce/produce.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { CategoriesProductComponent } from './components/categories-product/categories-product.component'
 import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
 
 
@@ -79,6 +80,7 @@ import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component
     ProduceComponent,
     ShopPageComponent,
     ShopComponent,
+    CategoriesProductComponent,
     BlogIdPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
