@@ -43,7 +43,11 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ProduceComponent } from './components/produce/produce.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ShopComponent } from './components/shop/shop.component';
+<<<<<<< HEAD
+import { CategoriesProductComponent } from './components/categories-product/categories-product.component'
+=======
 import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
+>>>>>>> c15fbf30563e6005121d3dc0c3ace580f0435c15
 
 
 @NgModule({
@@ -79,7 +83,11 @@ import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component
     ProduceComponent,
     ShopPageComponent,
     ShopComponent,
+<<<<<<< HEAD
+    CategoriesProductComponent,
+=======
     BlogIdPageComponent,
+>>>>>>> c15fbf30563e6005121d3dc0c3ace580f0435c15
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
