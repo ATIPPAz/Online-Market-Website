@@ -6,9 +6,13 @@
     top: 346px;
 }
 
+.link {
+    text-decoration: none;
+    color: #080913;
+}
+
 .Heading {
     font-family: 'DM Sans', sans-serif;
-
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -36,6 +40,7 @@ Light/Text Color/Title {
     .text-detail {
         text-align: center;
         font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
 
         font-style: normal;
         font-weight: 700;
@@ -52,6 +57,7 @@ Light/Text Color/Title {
     .text-detail {
         text-align: center;
         font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
 
         font-style: normal;
         font-weight: 700;
@@ -72,7 +78,7 @@ Light/Text Color/Title {
     .text-detail {
         text-align: center;
         font-family: 'DM Sans', sans-serif;
-
+        text-decoration: none;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -96,7 +102,7 @@ Light/Text Color/Title {
     .text-detail {
         text-align: center;
         font-family: 'DM Sans', sans-serif;
-
+        text-decoration: none;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -106,6 +112,7 @@ Light/Text Color/Title {
         margin-top: 24px;
     }
 }
+
 .Button {
     position: absolute;
     width: 24px;
@@ -113,5 +120,3 @@ Light/Text Color/Title {
     left: 141px;
     top: 1036px;
 }
-
-

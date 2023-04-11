@@ -9,4 +9,5 @@ export class CardTopshopComponent {
     'https://ird.rmuti.ac.th/2020/world/upload/post/picture/thumb/IRD010221C00006/noimg.png'
   @Input('title') title: string = 'market'
   @Input('name') name: string = ''
+  @Input('id') shopId: string = ''
 }
