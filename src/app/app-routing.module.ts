@@ -11,9 +11,11 @@ import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.compon
 import { MarketPageComponent } from './pages/market-page/market-page.component'
 import { NoPageComponent } from './components/no-page/no-page.component'
 import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
-import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
-import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component'
+import { BlogPageComponent } from './pages/blog-page/blog-page.component'
 import { ShopPageComponent } from './pages/shop-page/shop-page.component'
+import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
+
 const routes: Routes = [
   // app routes
   {
@@ -54,7 +56,11 @@ const routes: Routes = [
         component: BlogPageComponent,
       },
       {
-        path: 'shop',
+        path: 'blog/:id',
+        component: BlogIdPageComponent,
+      },
+      {
+        path: 'shop/:id',
         component: ShopPageComponent,
       },
       // {

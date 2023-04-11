@@ -42,7 +42,8 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ProduceComponent } from './components/produce/produce.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
-import { ShopComponent } from './components/shop/shop.component'
+import { ShopComponent } from './components/shop/shop.component';
+import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { ShopComponent } from './components/shop/shop.component'
     ProduceComponent,
     ShopPageComponent,
     ShopComponent,
+    BlogIdPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
