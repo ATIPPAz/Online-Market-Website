@@ -39,7 +39,10 @@ import {MarketComponent } from './components/market/market.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
-import { BlogComponent } from './components/blog/blog.component'
+import { BlogComponent } from './components/blog/blog.component';
+import { ProduceComponent } from './components/produce/produce.component';
+import { ShopPageComponent } from './pages/shop-page/shop-page.component';
+import { ShopComponent } from './components/shop/shop.component'
 
 
 @NgModule({
@@ -72,6 +75,9 @@ import { BlogComponent } from './components/blog/blog.component'
     AboutUsComponent,
     BlogPageComponent,
     BlogComponent,
+    ProduceComponent,
+    ShopPageComponent,
+    ShopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
