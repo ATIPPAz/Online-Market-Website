@@ -53,6 +53,11 @@
   padding-bottom: 4px;
 }
 
+.navClick {
+  color: #6d2100;
+  border-bottom: 5px solid #5F1E03;
+  padding-bottom: 4px;
+}
 
 
 /* mobile */
