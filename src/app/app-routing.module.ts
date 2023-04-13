@@ -15,6 +15,9 @@ import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.compon
 import { BlogPageComponent } from './pages/blog-page/blog-page.component'
 import { ShopPageComponent } from './pages/shop-page/shop-page.component'
 import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component'
+
+
 
 const routes: Routes = [
   // app routes
@@ -62,6 +65,10 @@ const routes: Routes = [
       {
         path: 'shop/:id',
         component: ShopPageComponent,
+      },
+      {
+        path: 'product/:id',
+        component: ProductDetailPageComponent,
       },
       // {
       //   path: 'contact',
