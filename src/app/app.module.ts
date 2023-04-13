@@ -47,7 +47,10 @@ import { CategoriesProductComponent } from './components/categories-product/cate
 import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component';
 import { TitleShopComponent } from './components/title-shop/title-shop.component';
 import { MarketIdComponent } from './components/market-id/market-id.component';
-import { OurShopsComponent } from './components/our-shops/our-shops.component'
+import { OurShopsComponent } from './components/our-shops/our-shops.component';
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
+import { DescriptionComponent } from './components/description/description.component';
+import { ImgComponent } from './components/img/img.component'
 
 
 @NgModule({
@@ -88,6 +91,9 @@ import { OurShopsComponent } from './components/our-shops/our-shops.component'
     TitleShopComponent,
     MarketIdComponent,
     OurShopsComponent,
+    ProductDetailPageComponent,
+    DescriptionComponent,
+    ImgComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
