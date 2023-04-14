@@ -1,0 +1,22 @@
+.margin {
+    margin-top: 50px;
+}
+.botton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 121px;
+    height: 56px;
+    left: 853px;
+    top: 1566px;
+    color: aliceblue;
+    background: #5F1E03;
+
+    border-radius: 8px;
+
+}
