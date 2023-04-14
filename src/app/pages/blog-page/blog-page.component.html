@@ -1,13 +1,18 @@
-<div class="container">
-  <div class="row">
+<div class="container-fluid  bg-white" >
+  <div class="row" style="padding: 0px 120px;">
     <div class="col">
-      <p class="title text-center">Blog</p>
+      <p class="title text-center" style="padding: 32px;">Blog</p>
       <hr />
       <p>All Posts</p>
-      <app-blog [id]="1" />
-      <app-blog [id]="2" />
-      <app-blog [id]="3" />
-      <app-blog [id]="4" />
+      <div class="container-fluid p-0">
+        <div class="row gy-5">
+          <app-blog [id]="1" />
+          <app-blog [id]="2" />
+          <app-blog [id]="3" />
+          <app-blog [id]="4" />
+        </div>
+      </div>
+      
       <div class="margin">
         <p class="text-center">
           The home of your favorite items We founded PAIMARKET with one goal in
