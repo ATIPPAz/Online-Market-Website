@@ -50,7 +50,8 @@ import { MarketIdComponent } from './components/market-id/market-id.component';
 import { OurShopsComponent } from './components/our-shops/our-shops.component';
 import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 import { DescriptionComponent } from './components/description/description.component';
-import { ImgComponent } from './components/img/img.component'
+import { ImgComponent } from './components/img/img.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component'
 
 
 @NgModule({
@@ -94,6 +95,7 @@ import { ImgComponent } from './components/img/img.component'
     ProductDetailPageComponent,
     DescriptionComponent,
     ImgComponent,
+    CartPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
