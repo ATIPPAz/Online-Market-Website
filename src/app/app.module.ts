@@ -51,7 +51,8 @@ import { OurShopsComponent } from './components/our-shops/our-shops.component';
 import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { ImgComponent } from './components/img/img.component';
-import { CartPageComponent } from './pages/cart-page/cart-page.component'
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
 
 
 @NgModule({
@@ -96,6 +97,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component'
     DescriptionComponent,
     ImgComponent,
     CartPageComponent,
+    PlaceOrderrPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiModule, Api],
