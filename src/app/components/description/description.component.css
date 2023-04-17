@@ -15,31 +15,18 @@
     letter-spacing: 0.003em;
 }
 .Price {
-    
-    width: 334px;
-    height: 62px;
-    left: 824px;
-    top: 362px;
     color: #F86338;
     font-size: 62px;
-    margin-top: 100px;
-    
 }
 .DetailsProduct {
     
-    width: 181px;
-    height: 29px;
-    left: 831px;
-    top: 572px;
+    
     color: #11142D;
     font-size: 24px;
 }
 .Description {
     
-    width: 504px;
-    height: 160px;
-    left: 824px;
-    top: 658px;
+    
     color: #9A9AB0;
     font-size: 16px;
 }

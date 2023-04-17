@@ -46,4 +46,7 @@
     border-radius: 8px;
 
 }
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
 
