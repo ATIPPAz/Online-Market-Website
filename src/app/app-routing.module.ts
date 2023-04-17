@@ -17,6 +17,7 @@ import { ShopPageComponent } from './pages/shop-page/shop-page.component'
 import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
 import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component'
 import { CartPageComponent } from './pages/cart-page/cart-page.component'
+import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
 
 
 const routes: Routes = [
@@ -73,6 +74,10 @@ const routes: Routes = [
       {
         path: 'cart/:id',
         component: CartPageComponent,
+      },
+      {
+        path: 'order/:id',
+        component: PlaceOrderrPageComponent,
       },
       // {
       //   path: 'contact',
