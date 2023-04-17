@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-place-orderr-page',
   templateUrl: './place-orderr-page.component.html',
-  styleUrls: ['./place-orderr-page.component.css']
+  styleUrls: ['./place-orderr-page.component.css'],
 })
-export class PlaceOrderrPageComponent {
-
-}
+export class PlaceOrderrPageComponent {}
