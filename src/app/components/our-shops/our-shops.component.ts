@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 import { TopShop } from '../../interfaces/topShopInterface'
 @Component({
   selector: 'app-our-shops',
   templateUrl: './our-shops.component.html',
-  styleUrls: ['./our-shops.component.css']
+  styleUrls: ['./our-shops.component.css'],
 })
 export class OurShopsComponent {
   data: TopShop[] = [

@@ -29,31 +29,30 @@ import { OtherComponent } from './components/other/other.component'
 import { CarouselComponent } from './components/utils/carousel/carousel.component'
 import { RecommendShopComponent } from './components/recommend-shop/recommend-shop.component'
 import { RegisterComponent } from './components/register/register.component'
-import { FooterComponent } from './components/utils/footer/footer.component';
-import { MarketPageComponent } from './pages/market-page/market-page.component';
-import { TopshopComponent } from './components/topshop/topshop.component';
-import { CardTopshopComponent } from './components/card-topshop/card-topshop.component';
-import { NoPageComponent } from './components/no-page/no-page.component';
+import { FooterComponent } from './components/utils/footer/footer.component'
+import { MarketPageComponent } from './pages/market-page/market-page.component'
+import { TopshopComponent } from './components/topshop/topshop.component'
+import { CardTopshopComponent } from './components/card-topshop/card-topshop.component'
+import { NoPageComponent } from './components/no-page/no-page.component'
 import { MarketIdPageComponent } from './pages/market-id-page/market-id-page.component'
-import {MarketComponent } from './components/market/market.component';
-import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { BlogPageComponent } from './pages/blog-page/blog-page.component';
-import { BlogComponent } from './components/blog/blog.component';
-import { ProduceComponent } from './components/produce/produce.component';
-import { ShopPageComponent } from './pages/shop-page/shop-page.component';
-import { ShopComponent } from './components/shop/shop.component';
+import { MarketComponent } from './components/market/market.component'
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component'
+import { AboutUsComponent } from './components/about-us/about-us.component'
+import { BlogPageComponent } from './pages/blog-page/blog-page.component'
+import { BlogComponent } from './components/blog/blog.component'
+import { ProduceComponent } from './components/product/product.component'
+import { ShopPageComponent } from './pages/shop-page/shop-page.component'
+import { ShopComponent } from './components/shop/shop.component'
 import { CategoriesProductComponent } from './components/categories-product/categories-product.component'
-import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component';
-import { TitleShopComponent } from './components/title-shop/title-shop.component';
-import { MarketIdComponent } from './components/market-id/market-id.component';
-import { OurShopsComponent } from './components/our-shops/our-shops.component';
-import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
-import { DescriptionComponent } from './components/description/description.component';
-import { ImgComponent } from './components/img/img.component';
-import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { BlogIdPageComponent } from './pages/blog-id-page/blog-id-page.component'
+import { TitleShopComponent } from './components/title-shop/title-shop.component'
+import { MarketIdComponent } from './components/market-id/market-id.component'
+import { OurShopsComponent } from './components/our-shops/our-shops.component'
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component'
+import { DescriptionComponent } from './components/description/description.component'
+import { ImgComponent } from './components/img/img.component'
+import { CartPageComponent } from './pages/cart-page/cart-page.component'
 import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
-
 
 @NgModule({
   declarations: [
