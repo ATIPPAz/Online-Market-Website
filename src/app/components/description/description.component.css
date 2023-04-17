@@ -1,5 +1,5 @@
 .Coconutky {
-    position: absolute;
+    
     width: 334px;
     height: 74px;
     left: 824px;
@@ -10,14 +10,12 @@
 .font {
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
     font-size: 16px;
-    line-height: 120%;
-
+    font-weight: 700;
     letter-spacing: 0.003em;
 }
 .Price {
-    position: absolute;
+    
     width: 334px;
     height: 62px;
     left: 824px;
@@ -28,7 +26,7 @@
     
 }
 .DetailsProduct {
-    position: absolute;
+    
     width: 181px;
     height: 29px;
     left: 831px;
@@ -37,7 +35,7 @@
     font-size: 24px;
 }
 .Description {
-    position: absolute;
+    
     width: 504px;
     height: 160px;
     left: 824px;
