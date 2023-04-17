@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-blank-layout',
   templateUrl: './blank-layout.component.html',
-  styleUrls: ['./blank-layout.component.css']
+  styleUrls: ['./blank-layout.component.css'],
 })
-export class BlankLayoutComponent {
-
-}
+export class BlankLayoutComponent {}

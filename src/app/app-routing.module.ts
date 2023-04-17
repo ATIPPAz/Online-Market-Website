@@ -19,7 +19,6 @@ import { ProductDetailPageComponent } from './pages/product-detail-page/product-
 import { CartPageComponent } from './pages/cart-page/cart-page.component'
 import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
 
-
 const routes: Routes = [
   // app routes
   {
