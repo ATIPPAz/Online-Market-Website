@@ -13,9 +13,12 @@ export class ProductDetailComponent {
   @Input('product') product: Product
   qty:number = 1
   ngOnInit(): void {
-
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    // console.log(this.test);
   }
   getQty(qty){
     this.qty = qty 
   }
+
 }

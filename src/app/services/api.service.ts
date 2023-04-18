@@ -5,7 +5,7 @@ import { Catagory } from '../interfaces/catagory'
 import { Market } from '../interfaces/market'
 import { Product } from '../interfaces/product'
 import { Shop } from '../interfaces/shop'
-
+import {  Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
@@ -14,13 +14,35 @@ export class ApiService {
   apiUr: string =
     'https://c512-2001-fb1-90-c3a9-e5d0-bb1e-763d-be07.ngrok-free.app/api/v1'
     token:string
-  constructor(private _http: HttpClient) {
-    // console.log(s)
-    // Create headers
+  constructor(private _http: HttpClient,private router: Router) {
+    this.token = localStorage.getItem('userToken')
+    console.log(this.token);
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`
     });
+  }
+  login({username,password}): Observable<{ status: number,data: {token:string} }> {
+    return this._http.post<{ status: number, data: {token:string}  }>(`${this.apiUr}/login`,{username,password})
+  }
+  setToken(token){
+    localStorage.setItem("userToken", token)
+  }
+  logout():void {
+    localStorage.removeItem("userToken")
+    this.router.navigate(['/home'])
+  }
+  isLogin(){
+    return  localStorage.getItem('userToken') === "" || !localStorage.getItem('userToken')?false:true
+  }
+  register(user): Observable<{ status: number,data: {token:string} }> {
+    console.log(user);
+    
+    return this._http.post<{ status: number, data: {token:string}  }>(`${this.apiUr}/register`,{...user})
+  }
+  goToLoginPage(){
+    this.logout()
+    this.router.navigate(['/login'])
   }
   getAllCatagory(
     queryString: string = null
