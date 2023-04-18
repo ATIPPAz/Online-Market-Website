@@ -53,7 +53,8 @@ import { DescriptionComponent } from './components/description/description.compo
 import { ImgComponent } from './components/img/img.component'
 import { CartPageComponent } from './pages/cart-page/cart-page.component'
 import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
-import { ProductDetailComponent } from './components/product-detail/product-detail.component'
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { SpinnerComponent } from './components/utils/spinner/spinner.component'
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     CartPageComponent,
     PlaceOrderrPageComponent,
     ProductDetailComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

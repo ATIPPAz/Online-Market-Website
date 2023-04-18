@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+.spinner-width {
+  width: 100px;
+}
+
 .head {
   position: absolute;
   width: 734px;
