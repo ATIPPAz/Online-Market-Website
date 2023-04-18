@@ -3,7 +3,6 @@
   height: 178px;
   left: 91px;
   top: 929px;
-
 }
 
 .bc {
@@ -30,8 +29,7 @@
 
   /* Light/Text Color/Title */
 
-  color: #11142D;
-
+  color: #11142d;
 }
 
 .botton {
@@ -42,16 +40,14 @@
   padding: 18px 24px;
   gap: 10px;
 
-
   width: 140px;
   height: 56px;
   left: 853px;
   top: 1566px;
   color: aliceblue;
-  background: #5F1E03;
+  background: #5f1e03;
 
   border-radius: 8px;
-
 }
 
 .plzOrder {
@@ -69,8 +65,8 @@
   top: 1042px;
 
   /* Light/Secondary Color/50% */
-  border: 2px solid #F86338;
-  background: #F86338;
+  border: 2px solid #f86338;
+  background: #f86338;
   border-radius: 8px;
   color: aliceblue;
 }
@@ -90,8 +86,8 @@
   top: 1042px;
 
   /* Light/Secondary Color/85% */
-  color: #5F1E03;
-  border: 2px solid #5F1E03;
+  color: #5f1e03;
+  border: 2px solid #5f1e03;
   border-radius: 8px;
   background: #ffffff;
 }
@@ -112,7 +108,7 @@
 
   /* Light/Secondary Color/85% */
 
-  background: #5F1E03;
+  background: #5f1e03;
   border-radius: 8px;
   color: #ffffff;
 }
@@ -120,7 +116,6 @@
 .icon {
   width: 24px;
   height: 24px;
-
 }
 
 .quan {
@@ -150,7 +145,6 @@
   .contact-box {
     padding: 20px;
   }
-
 }
 
 /* tablet or ipad */
@@ -167,13 +161,12 @@
   }
 
   .contact-space {
-    padding: 48px
+    padding: 48px;
   }
 
   .contact-box {
     padding: 120px;
   }
-
 }
 
 /* mac */
@@ -190,13 +183,12 @@
   }
 
   .contact-space {
-    padding: 48px
+    padding: 48px;
   }
 
   .contact-box {
     padding: 120px;
   }
-
 }
 
 /* pc */
@@ -213,19 +205,16 @@
   }
 
   .contact-space {
-    padding: 32px 120px
+    padding: 32px 120px;
   }
 
   .contact-box {
     padding: 32px 120px;
   }
-
 }
 
 .title {
-
-
-  color: #11142D;
+  color: #11142d;
   font-size: 20px;
 }
 
@@ -234,7 +223,6 @@ a {
 }
 
 .Coconutky {
-
   width: 334px;
   height: 74px;
   left: 824px;
@@ -252,20 +240,16 @@ a {
 }
 
 .Price {
-  color: #F86338;
+  color: #f86338;
   font-size: 62px;
 }
 
 .DetailsProduct {
-
-
-  color: #11142D;
+  color: #11142d;
   font-size: 24px;
 }
 
 .Description {
-
-
-  color: #9A9AB0;
+  color: #9a9ab0;
   font-size: 16px;
 }

@@ -11,13 +11,13 @@ import { Shop } from '../../interfaces/shop'
   styleUrls: ['./shop-page.component.css'],
 })
 export class ShopPageComponent {
-  shopId: string= ''
-  marketId: string= ''
+  shopId: string = ''
+  marketId: string = ''
   shopData: Shop
-  shopName: string= ''
+  shopName: string = ''
   catagoryId: string = ''
   catagoriesData: Catagory[] = []
-  productData: Product[]= []
+  productData: Product[] = []
   constructor(private routedata: ActivatedRoute, private api: ApiService) {}
   ngOnInit(): void {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
@@ -34,20 +34,21 @@ export class ShopPageComponent {
     })
   }
   getCatagory() {
-    const catagoty = this.catagoriesData.find((e) => e.catagoryId == this.catagoryId) 
-    return catagoty?catagoty.catagoryName:'All Catagory'
+    const catagoty = this.catagoriesData.find(
+      (e) => e.catagoryId == this.catagoryId
+    )
+    return catagoty ? catagoty.catagoryName : 'All Catagory'
   }
-  hasProduct(){
-    return this.productData.length !== 0 ? true:false
+  hasProduct() {
+    return this.productData.length !== 0 ? true : false
   }
-   fecthDataWithCatagory(id) {
+  fecthDataWithCatagory(id) {
     this.catagoryId = id
     this.api
       .getAllProduct(`shopId=${this.shopId}&catagoryId=${id}`)
       .subscribe((r) => {
         this.productData = r.data
       })
-      console.log(this.hasProduct());
-      
+    console.log(this.hasProduct())
   }
 }

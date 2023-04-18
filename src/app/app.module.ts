@@ -52,7 +52,7 @@ import { ProductDetailPageComponent } from './pages/product-detail-page/product-
 import { DescriptionComponent } from './components/description/description.component'
 import { ImgComponent } from './components/img/img.component'
 import { CartPageComponent } from './pages/cart-page/cart-page.component'
-import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component';
+import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr-page.component'
 import { ProductDetailComponent } from './components/product-detail/product-detail.component'
 
 @NgModule({
