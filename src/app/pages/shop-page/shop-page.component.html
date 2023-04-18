@@ -1,34 +1,40 @@
 <div class="container-fluid">
   <div class="row">
-    <app-title-shop></app-title-shop>
-  </div><br/>
+    <app-title-shop [title]="shopName"></app-title-shop>
+  </div>
+  <br />
   <div class="row">
     <div class="col-md-4">
       <div class="row">
-        <div class="col" style="margin-left: 112px;">
-          <p class="title">Rrice
-            <img src="https://img.icons8.com/ios/50/000000/filled-filter.png" 
-            width="24px" 
-            height="24px"
-            align="right"/>
+        <div class="col" style="margin-left: 112px">
+          <p class="title">
+            Price
+            <img
+              src="https://img.icons8.com/ios/50/000000/filled-filter.png"
+              width="24px"
+              height="24px"
+              align="right"
+            />
           </p>
         </div>
       </div>
       <div class="row margin">
-        <div class="col" style="margin-left: 112px;">
-          <p class="title">Product Categories</p><br/>
-           <app-categories-product></app-categories-product>
-           <app-categories-product></app-categories-product>
-           <app-categories-product></app-categories-product>
-           <app-categories-product></app-categories-product>
+        <div class="col" style="margin-left: 112px">
+          <p class="title">Product Categories</p>
+          <br />
+          <app-categories-product></app-categories-product>
+          <app-categories-product></app-categories-product>
+          <app-categories-product></app-categories-product>
+          <app-categories-product></app-categories-product>
         </div>
       </div>
     </div>
     <div class="col-md-8">
-      <app-shop></app-shop><br/>
+      <app-shop [shopData]="productData"/>
+      <br />
     </div>
     <div align="center">
-      <button onClick = "history.go(1)" class="botton"> See More </button>
+      <button onClick="history.go(1)" class="botton">See More</button>
     </div>
-  </div> 
+  </div>
 </div>

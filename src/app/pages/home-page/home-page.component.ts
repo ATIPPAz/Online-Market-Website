@@ -7,6 +7,7 @@ import { ApiService } from '../../services/api.service'
 })
 export class HomeComponentPage {
   marketData = []
+  randomShopData = []
   constructor(private _api: ApiService) {
     this._api.getAll('market').subscribe((data) => {
       this.marketData = data
@@ -14,7 +15,8 @@ export class HomeComponentPage {
         e.marketId = parseInt(e.marketId)
       })
     })
-    this._api.getOne({ path: 'product', id: '1' }).subscribe((data) => {
+    this._api.getAll('randomShop').subscribe((data) => {
+      this.randomShopData = data
       console.log(data)
     })
   }

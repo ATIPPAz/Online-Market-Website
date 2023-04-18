@@ -43,8 +43,16 @@ const routes: Routes = [
         component: MarketPageComponent,
       },
       {
-        path: 'market/:id',
+        path: 'market/:marketId',
         component: MarketIdPageComponent,
+      },
+      {
+        path: 'market/:marketId/shop/:shopId',
+        component: ShopPageComponent,
+      },
+      {
+        path: 'market/:marketId/shop/:shopId/product/productId',
+        component: ProductDetailPageComponent,
       },
       {
         path: 'other',
@@ -62,14 +70,14 @@ const routes: Routes = [
         path: 'blog/:id',
         component: BlogIdPageComponent,
       },
-      {
-        path: 'shop/:id',
-        component: ShopPageComponent,
-      },
-      {
-        path: 'product/:id',
-        component: ProductDetailPageComponent,
-      },
+      // {
+      //   path: 'shop/:id',
+      //   component: ShopPageComponent,
+      // },
+      // {
+      //   path: 'product/:id',
+      //   component: ProductDetailPageComponent,
+      // },
       {
         path: 'cart/:id',
         component: CartPageComponent,

@@ -11,12 +11,10 @@ export class ApiService {
   constructor(private _http: HttpClient) {
     // console.log(s)
   }
-  getAll(
-    path: string,
-    queryKey: [] = [],
-    queryValue: [] = []
-  ): Observable<any> {
-    return this._http.get<any>(`${this.apiUr}/${path}`)
+  getAll(path: string, queryString: string = null): Observable<any> {
+    return this._http.get<any>(
+      `${this.apiUr}/${path}?${queryString ? queryString : ''}`
+    )
   }
   getOne(
     obj: {

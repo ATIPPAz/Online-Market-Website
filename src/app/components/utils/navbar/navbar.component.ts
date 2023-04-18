@@ -8,6 +8,9 @@ import { Router } from '@angular/router'
 export class NavbarComponent {
   constructor(private router: Router) {}
   ngOnInit(): void {
+    this.go()
+  }
+  go() {
     const page: string = this.router.url.split('/')[1]
     const nav = document.getElementById(page)
     nav.classList.add('navClick')
