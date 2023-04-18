@@ -1,122 +1,118 @@
 .MARKET {
-    position: absolute;
-    width: 551px;
-    height: 58px;
-    left: 439px;
-    top: 346px;
+  position: absolute;
+  width: 551px;
+  height: 58px;
+  left: 439px;
+  top: 346px;
 }
 
 .link {
-    text-decoration: none;
-    color: #080913;
+  text-decoration: none;
+  color: #080913;
 }
 
 .Heading {
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
 }
 
-
-
 Light/Text Color/Title {
-    color: #080913;
+  color: #080913;
 }
 
 .box {
-    font-family: 'DM Sans', sans-serif;
-
-
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* mobile */
 @media (max-width: 575.98px) {
-    .canvas {
-        padding: 64px 16px 64px 16px;
-    }
+  .canvas {
+    padding: 64px 16px 64px 16px;
+  }
 
-    .text-detail {
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
-        text-decoration: none;
+  .text-detail {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: 0.005em;
-        margin-top: 24px;
-    }
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin-top: 24px;
+  }
 }
 
 /* tablet or ipad */
 @media (min-width: 768px) {
-    .text-detail {
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
-        text-decoration: none;
+  .text-detail {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: 0.005em;
-        margin-top: 24px;
-    }
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin-top: 24px;
+  }
 
-    .canvas {
-        padding: 64px 84px 64px 84px;
-    }
+  .canvas {
+    padding: 64px 84px 64px 84px;
+  }
 }
 
 /* mac */
 @media (min-width: 1199.98px) {
-    .text-detail {
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: 0.005em;
-        margin-top: 24px;
-    }
+  .text-detail {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin-top: 24px;
+  }
 
-    .canvas {
-        padding: 64px 120px 64px 120px;
-    }
+  .canvas {
+    padding: 64px 120px 64px 120px;
+  }
 }
 
 /* pc */
 @media (min-width: 1399.98px) {
-    .canvas {
-        padding: 64px 120px 64px 120px;
-    }
+  .canvas {
+    padding: 64px 120px 64px 120px;
+  }
 
-    .text-detail {
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: 0.005em;
-        margin-top: 24px;
-    }
+  .text-detail {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin-top: 24px;
+  }
 }
 
 .Button {
-    position: absolute;
-    width: 24px;
-    height: 24.94px;
-    left: 141px;
-    top: 1036px;
+  position: absolute;
+  width: 24px;
+  height: 24.94px;
+  left: 141px;
+  top: 1036px;
 }

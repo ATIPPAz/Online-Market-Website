@@ -1,18 +1,18 @@
 body {
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .input-text-market {
   border: none;
   background: #f4f4f4;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .main-color {
-  color: #5F1E03;
+  color: #5f1e03;
 }
 
 .bg-main-color {
-  background-color: #5F1E03;
+  background-color: #5f1e03;
 }

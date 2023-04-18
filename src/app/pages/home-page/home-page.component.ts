@@ -8,13 +8,21 @@ import { Market } from '../../interfaces/market'
 })
 export class HomeComponentPage {
   marketData: Market[] = []
-  randomShopData = []
+  randomShopData: Market[] = []
   constructor(private _api: ApiService) {
     this._api.getAllMarket().subscribe((data) => {
       this.marketData = data.data
+      this._api.getAllRandomShop().subscribe((e) => {
+        this.randomShopData = e.data
+        this.randomShopData.forEach(rd => {
+          this.marketData.forEach(mk => {
+            if (rd.marketId === mk.marketId)
+              rd.marketName = mk.marketName
+          })
+        })
+        console.log(this.randomShopData);
+      })
     })
-    this._api.getAllRandomShop().subscribe((data) => {
-      this.randomShopData = data.data
-    })
+
   }
 }
