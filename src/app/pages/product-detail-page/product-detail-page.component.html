@@ -1,41 +1,35 @@
 <div class="container-fluid bg-white contact-space contact-box">
-  <div class="row">
-    <p class="title">
-      ตลาดนัดสวนจตุจักร > shop > Coco.nut_katiishappy > Coconutky
-    </p>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="row">
-        <img
-          _ngcontent-bsc-c64=""
-          src="https://media.discordapp.net/attachments/1079420055776940043/1094533626303094784/image_57.png?width=728&height=662"
-          alt="coconut"
-          style="width: 604px; height: 549px; object-fit: cover"
-        />
-      </div>
-      <div class="row">
-        <div class="col" style="margin-top: 10px">
-          <img
-            _ngcontent-bsc-c64=""
-            src="https://media.discordapp.net/attachments/1079420055776940043/1094533626567327844/image_58.png?width=237&height=222"
-            alt="coconut"
-            class="img"
-          />
-
-          <img
-            _ngcontent-bsc-c64=""
-            src="https://media.discordapp.net/attachments/1079420055776940043/1094533626793836594/image_59.png?width=240&height=227"
-            alt="coconut"
-            class="img"
-          />
-
-          <img
-            _ngcontent-bsc-c64=""
-            src="https://media.discordapp.net/attachments/1079420055776940043/1094533627066458192/image_60.png?width=240&height=227"
-            alt="coconut"
-            class="img"
-          />
+    <div class="row ">
+        <p class="title">ตลาดนัดสวนจตุจักร > shop  > Coco.nut_katiishappy  > Coconutky</p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-img></app-img>
+        </div>
+        <div class="col">
+            <app-description></app-description>
+            <p style="margin-top: 200px;">Quantity :</p>
+            <div class="input-setting">
+                <div class="input-group mb-3">
+                    <button class="btn btncreate" (click)="minus()">-</button>
+                    <input type="text" class="form-control text-center" [value]="value"/>
+                    <button class="btn btncreate" (click)="plus()">+</button>
+                </div>
+            </div>
+              
+            <div>
+                <button _ngcontent-rud-c78="" onclick="history.go(1)" class="Wishlist"> Wishlist
+                    <img src="https://img.icons8.com/ios/50/5f1e03/like--v1.png"
+                    class="icon"/>
+                </button>
+                <button _ngcontent-rud-c78="" onclick="history.go(1)" class="add"> Add to Cart
+                    <img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/FFFFFF/external-add-to-cart-shopping-and-commerce-smashingstocks-detailed-outline-smashing-stocks.png"
+                    class="icon"/>
+                </button>
+                <a href="cart/1">
+                    <button _ngcontent-rud-c78="" onclick="history.go(1)" class="plzOrder"> Place Order</button>
+                </a>
+            </div>
         </div>
       </div>
     </div>
@@ -65,4 +59,4 @@
   </div>
 </div>
 
-<!-- หน้านี้แหละ ตัวหนังสือมันซ้อนกันอ่ะ จริงๆเค้าสร้าง component ชื่อ img และ Description แล้วเอามาใส่ มันก็ยังซ้อนกันอยู่ อันที่ซ้อนอ่ะ คือ แถวของปุ่มมันซ้อนกัน Description -->
+
