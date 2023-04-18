@@ -1,12 +1,12 @@
 <div class="carousel-container carousel-box">
   <div id="carouselExampleDark" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
-      <div *ngFor="let market of marketData">
+      <div *ngFor="let market of marketData; let idx = index">
         <button
           type="button"
-          [class]="market.marketId === 1 ? 'active' : ''"
+          [class]="market.marketId === '1' ? 'active' : ''"
           data-bs-target="#carouselExampleDark"
-          attr.data-bs-slide-to="{{ market.marketId - 1 }}"
+          attr.data-bs-slide-to="{{ idx }}"
           attr.aria-label="Slide {{ market.marketId }}"
         ></button>
       </div>
@@ -15,7 +15,7 @@
       <div *ngFor="let market of marketData">
         <div
           [class]="
-            market.marketId === 1 ? 'carousel-item active' : 'carousel-item'
+            market.marketId === '1' ? 'carousel-item active' : 'carousel-item'
           "
         >
           <a [href]="'/market/' + market.marketId">
@@ -26,8 +26,8 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>{{ market.marketName }}</h5>
-            </div></a
-          >
+            </div>
+          </a>
         </div>
       </div>
     </div>

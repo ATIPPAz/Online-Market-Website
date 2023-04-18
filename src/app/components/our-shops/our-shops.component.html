@@ -1,26 +1,27 @@
 <p class="title text-center">Our Shops</p>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2"><a>All Shops</a></div>
-        <div class="col-md-2">Food and Beverages</div>
-        <div class="col-md-2">Fashion and Beauty </div>
-        <div class="col-md-2">Baby and Toy</div>
-        <div class="col-md-2">Home and Living </div>
-        <div class="col-md-2">Electronics </div>
-    </div><br/>
-    <div class="container-fluid">
-      <div class="row gy-4">
-        <div
-          *ngFor="let item of data"
-          class="col-md-6 col-4 col-sm-6 col-xl-4 col-xxl-3 col-lg-4"
-        >
-          <app-card-topshop
-            [name]="item.shopName"
-            [img]="item.marketImg"
-            [title]="item.marketTitle"
-            [id]="item.shopId"
-          ></app-card-topshop>
-        </div>
+  <div class="row">
+    <div class="col-md-2"><a>All Shops</a></div>
+    <div class="col-md-2">Food and Beverages</div>
+    <div class="col-md-2">Fashion and Beauty</div>
+    <div class="col-md-2">Baby and Toy</div>
+    <div class="col-md-2">Home and Living</div>
+    <div class="col-md-2">Electronics</div>
+  </div>
+  <br />
+  <div class="container-fluid">
+    <div class="row gy-4">
+      <div
+        *ngFor="let item of data"
+        class="col-md-6 col-4 col-sm-6 col-xl-4 col-xxl-3 col-lg-4"
+      >
+        <app-card-topshop
+          [name]="item.shopName"
+          [img]="item.marketImg"
+          [title]="item.marketTitle"
+          [id]="item.shopId"
+        ></app-card-topshop>
       </div>
     </div>
+  </div>
 </div>

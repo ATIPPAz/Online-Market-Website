@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <app-title-shop [title]="shopName"></app-title-shop>
+    <app-title-shop [title]="shopData.shopName"></app-title-shop>
   </div>
   <br />
   <div class="row">
@@ -17,30 +17,46 @@
             />
           </p>
           <div>
-            <input type="range" id="volume" name="volume"
-                   min="0" max="1000"
-                   style="width: 500px;">
+            <input
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="1000"
+              style="width: 500px"
+            />
             <label for="cowbell">Range 1-1000</label>
           </div>
         </div>
       </div>
       <div class="row margin">
         <div class="col" style="margin-left: 112px">
-          <p class="title">Product Categories</p>
+          <div class="d-flex">
+            <span class="title">Product Categories</span>
+            <span class="text-end">{{ getCatagory() }}</span>
+          </div>
           <br />
-          <app-categories-product></app-categories-product>
-          <app-categories-product></app-categories-product>
-          <app-categories-product></app-categories-product>
-          <app-categories-product></app-categories-product>
+          <div *ngFor="let catagory of catagoriesData">
+            <app-categories-product
+              [id]="catagory.catagoryId"
+              [name]="catagory.catagoryName"
+              (select)="fecthDataWithCatagory($event)"
+            >
+            </app-categories-product>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-8">
-      <app-shop [shopData]="productData"/>
+
+    <div class="col-md-8" *ngIf="productData; else noData">
+      <app-shop [shopData]="productData" />
       <br />
     </div>
-    <div align="center">
+    <ng-template #noData>
+      <div class="col-md-8">NoData Product</div>
+    </ng-template>
+    <!-- <div align="center">
       <button onClick="history.go(1)" class="botton">See More</button>
-    </div>
+    </div> -->
   </div>
 </div>
