@@ -51,7 +51,7 @@ const routes: Routes = [
         component: ShopPageComponent,
       },
       {
-        path: 'market/:marketId/shop/:shopId/product/productId',
+        path: 'market/:marketId/shop/:shopId/product/:productId',
         component: ProductDetailPageComponent,
       },
       {
