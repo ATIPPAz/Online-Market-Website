@@ -7,7 +7,8 @@ import { query } from '@angular/animations'
   providedIn: 'root',
 })
 export class ApiService {
-  apiUr: string = 'http://localhost:5000/api/v1'
+  apiUr: string =
+    'https://c512-2001-fb1-90-c3a9-e5d0-bb1e-763d-be07.ngrok-free.app/api/v1'
   constructor(private _http: HttpClient) {
     // console.log(s)
   }
