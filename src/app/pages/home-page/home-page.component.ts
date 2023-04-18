@@ -23,6 +23,7 @@ export class HomeComponentPage {
         console.log(this.randomShopData);
       })
     })
+console.log(this._api.isLogin());
 
   }
 }

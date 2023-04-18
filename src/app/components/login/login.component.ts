@@ -1,4 +1,6 @@
 import { Component } from '@angular/core'
+import { ApiService } from '../../services/api.service'
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-components-login',
   templateUrl: './login.component.html',
@@ -7,9 +9,23 @@ import { Component } from '@angular/core'
 export class LoginComponent {
   username: string
   password: string
-  constructor() {}
+  constructor(private _api: ApiService,private router: Router) {
+
+  }
 
   login() {
-    console.log(`username : ${this.username} password: ${this.password}`)
+    this._api.login({ username: this.username, password: this.password }).subscribe(e => {
+      if(e.status === 200){
+        localStorage.setItem("userToken", e.data.token)
+        this.router.navigateByUrl('/home')
+      }
+      else{
+        alert('username or password invalid')
+      }
+    },
+      error => {
+        console.log(error);
+      })
   }
+  
 }
