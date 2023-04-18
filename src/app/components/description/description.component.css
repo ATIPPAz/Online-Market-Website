@@ -1,32 +1,27 @@
 .Coconutky {
-    
-    width: 334px;
-    height: 74px;
-    left: 824px;
-    top: 362px;
-    color: #333333;
-    font-size: 74px;
+  width: 334px;
+  height: 74px;
+  left: 824px;
+  top: 362px;
+  color: #333333;
+  font-size: 74px;
 }
 .font {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.003em;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.003em;
 }
 .Price {
-    color: #F86338;
-    font-size: 62px;
+  color: #f86338;
+  font-size: 62px;
 }
 .DetailsProduct {
-    
-    
-    color: #11142D;
-    font-size: 24px;
+  color: #11142d;
+  font-size: 24px;
 }
 .Description {
-    
-    
-    color: #9A9AB0;
-    font-size: 16px;
+  color: #9a9ab0;
+  font-size: 16px;
 }

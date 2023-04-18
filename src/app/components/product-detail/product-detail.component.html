@@ -1,0 +1,144 @@
+<!-- <div class="container-fluid bg-white contact-space contact-box"> -->
+<div class="container-fluid bg-white contact-space">
+  <p class="title bc">
+    {{ market.marketName }} > {{ shop.shopName }} > {{ product.productName }}
+  </p>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="row">
+          <img
+            [src]="product.productCoverImg"
+            [alt]="product.productName"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="row">
+          <div class="col-4" *ngFor="let img of product.productImg">
+            <img
+              [src]="img"
+              [alt]="product.productName"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col" style="height: auto">
+        <div class="row">
+          <div class="row font">
+            <p class="Coconutky">{{ product.productName }}</p>
+            <p class="Price">THB{{ product.productPrice }}</p>
+            <p class="DetailsProduct">Details Product</p>
+            <p class="Description">
+              {{ product.productDetail }}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <p style="margin-top: 200px">Quantity : {{ product.productQty }}</p>
+          <div class="input-setting">
+            <div class="input-group mb-3">
+              <button class="btn btncreate" (click)="minus()">-</button>
+              <input
+                type="text"
+                class="form-control text-center"
+                [value]="value"
+              />
+              <button class="btn btncreate" (click)="plus()">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a onclick="history.go(1)" class="btn btn-info">
+              <div class="d-flex">
+                <div class="my-auto">
+                  Wishlist
+                  <img
+                    src="https://img.icons8.com/ios/50/5f1e03/like--v1.png"
+                    class="icon my-auto"
+                    alt="icon "
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a onclick="history.go(1)" class="btn btn-info">
+              <div class="d-flex">
+                <div class="my-auto">
+                  Add to Cart
+                  <img
+                    src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/FFFFFF/external-add-to-cart-shopping-and-commerce-smashingstocks-detailed-outline-smashing-stocks.png"
+                    class="icon my-auto"
+                    alt="icon "
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a onclick="history.go(1)" class="btn btn-info">
+              <div class="d-flex">
+                <div class="my-auto">Place Order</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 
+  <div class="container-fluid">
+    <div class="row bg-white contact-space">
+      <img [src]="product.productCoverImg" [alt]="product.productName"
+        style="width: 604px; height: 549px; object-fit: cover" />
+    </div>
+    <div class="row">
+      <div class="col" style="margin-top: 35px" *ngFor="let img of product.productImg">
+        <img [src]="img" [alt]="product.productName" />
+      </div>
+
+
+    </div>
+    <div class="col">
+      <div class="container-fluid bg-white contact-space">
+        <div class="row font">
+          <p class="Coconutky">{{product.productName}}</p>
+          <p class="Price">THB{{product.productPrice}}</p>
+          <p class="DetailsProduct">Details Product</p>
+          <p class="Description">
+            {{product.productDetail}}
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 200px">Quantity : {{product.productQty}}</p>
+      <div class="input-setting">
+        <div class="input-group mb-3">
+          <button class="btn btncreate" (click)="minus()">-</button>
+          <input type="text" class="form-control text-center" [value]="value" />
+          <button class="btn btncreate" (click)="plus()">+</button>
+        </div>
+      </div>
+
+      <div>
+        <button _ngcontent-rud-c78="" onclick="history.go(1)" class="Wishlist">
+          Wishlist
+          <img src="https://img.icons8.com/ios/50/5f1e03/like--v1.png" class="icon" />
+        </button>
+        <button _ngcontent-rud-c78="" onclick="history.go(1)" class="add">
+          Add to Cart
+          <img
+            src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/FFFFFF/external-add-to-cart-shopping-and-commerce-smashingstocks-detailed-outline-smashing-stocks.png"
+            class="icon" />
+        </button>
+        <a href="cart/1">
+          <button _ngcontent-rud-c78="" onclick="history.go(1)" class="plzOrder">
+            Place Order
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
+</div>

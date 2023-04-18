@@ -1,22 +1,18 @@
-<div class="card">
-  <img
-    src="https://img.icons8.com/ios-glyphs/30/FD7E14/hearts.png"
-    class="icon"
-  />
-  <a routerLink="/product/1">
-    <img
-      src="https://media.discordapp.net/attachments/1079420055776940043/1094533306256732190/image_43.png"
-      alt="Denim Jeans"
-      class="img rounded mx-auto d-block"
-  /></a>
-  <a routerLink="/product/1">
-    <h1 class="color1">Coconuto</h1>
-    <p class="color2">คำอธิบายสินค้า</p></a
-  >
-  <p><span style="color: #f3692e">99</span></p>
-</div>
-<div class="input-group mb-3">
-  <button class="btn" (click)="minus()">-</button>
-  <input type="number" min="1" max="6" class="form-control" [value]="value" />
-  <button class="btn" (click)="plus()">+</button>
+<div class="card w-100 h-100">
+  <div class="box">
+    <img src="https://img.icons8.com/ios-glyphs/30/FD7E14/hearts.png" class="like-icon" alt="like" />
+    <div class="content">
+      <a routerLink="{{ href }}">
+        <img src="https://media.discordapp.net/attachments/1079420055776940043/1094533306256732190/image_43.png"
+          style="width: 100%;height: auto;object-fit: cover;" alt="Denim Jeans"
+          class="img rounded mx-auto d-block" /></a>
+      <a routerLink="{{ href }}">
+        <h1 class="color1">{{ product.productName }}</h1>
+        <p class="color2">{{ product.productDescribe }}</p>
+      </a>
+      <p>
+        <span style="color: #f3692e">{{ product.productPrice }} ฿</span>
+      </p>
+    </div>
+  </div>
 </div>

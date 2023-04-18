@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core'
-import { TopShop } from '../../interfaces/topShopInterface'
+
+
+
 @Component({
   selector: 'app-topshop',
   templateUrl: './topshop.component.html',
@@ -7,6 +9,7 @@ import { TopShop } from '../../interfaces/topShopInterface'
 })
 export class TopshopComponent {
   @Input('randomShopData') randomShopData = []
+
 
   // data: TopShop[] = [
   //   {

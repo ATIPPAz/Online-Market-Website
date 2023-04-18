@@ -2,7 +2,7 @@
 @media (max-width: 575.98px) {
   .box {
     min-height: 700px;
-    margin: 32px 16px
+    margin: 32px 16px;
   }
 }
 
@@ -10,7 +10,7 @@
 @media (min-width: 768px) {
   .box {
     min-height: 700px;
-    margin: 32px 64px
+    margin: 32px 64px;
   }
 }
 
@@ -18,7 +18,7 @@
 @media (min-width: 1199.98px) {
   .box {
     min-height: 700px;
-    margin: 32px 120px
+    margin: 32px 120px;
   }
 }
 

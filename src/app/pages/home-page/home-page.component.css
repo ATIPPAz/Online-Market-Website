@@ -7,7 +7,6 @@
   .box {
     padding: 0px 32px;
   }
-
 }
 
 /* tablet or ipad */
@@ -22,7 +21,6 @@
   .box {
     padding: 0px 120px;
   }
-
 }
 
 /* pc */
@@ -30,5 +28,4 @@
   .box {
     padding: 0px 120px;
   }
-
 }

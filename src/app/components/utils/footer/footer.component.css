@@ -12,10 +12,8 @@
   gap: 4px;
 }
 
-
-
 .copyright {
-  background-color: #5F1E03;
+  background-color: #5f1e03;
   width: 100%;
   height: 60px;
   color: white;
@@ -24,7 +22,7 @@
 }
 
 .icon-circle {
-  background-color: #5F1E03;
+  background-color: #5f1e03;
   border-radius: 100%;
   cursor: pointer;
   width: 50px;
@@ -55,11 +53,10 @@
   /* padding: 0px 0px 24px 32px; */
 }
 
-
 /* mobile */
 @media (max-width: 575.98px) {
   .logo {
-    color: #5F1E03;
+    color: #5f1e03;
     font-family: 'DM Sans', sans-serif;
 
     font-style: normal;
@@ -79,7 +76,7 @@
 /* tablet or ipad */
 @media (min-width: 768px) {
   .logo {
-    color: #5F1E03;
+    color: #5f1e03;
     font-family: 'DM Sans', sans-serif;
 
     font-style: normal;
@@ -99,7 +96,7 @@
 /* mac */
 @media (min-width: 1199.98px) {
   .logo {
-    color: #5F1E03;
+    color: #5f1e03;
     font-family: 'DM Sans', sans-serif;
 
     font-style: normal;
@@ -108,7 +105,6 @@
     line-height: 120%;
     letter-spacing: 0.003em;
     padding-left: 30px;
-
   }
 
   .banner {
@@ -120,7 +116,7 @@
 /* pc */
 @media (min-width: 1399.98px) {
   .logo {
-    color: #5F1E03;
+    color: #5f1e03;
     font-family: 'DM Sans', sans-serif;
 
     font-style: normal;
