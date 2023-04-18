@@ -10,4 +10,5 @@ export class CardTopshopComponent {
   @Input('title') title: string = 'market'
   @Input('name') name: string = ''
   @Input('id') shopId: string = ''
+  @Input('marketId') marketId: string = ''
 }

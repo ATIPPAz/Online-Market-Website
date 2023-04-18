@@ -1,8 +1,14 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })
-export class CarouselComponent {}
+export class CarouselComponent {
+  @Input('marketData') marketData: {
+    marketId: number
+    marketImg: string
+    marketName: string
+  }[] = []
+}

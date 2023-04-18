@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
-
+import { RouterModule } from '@angular/router'
 //layout
 import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component'
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component'
@@ -98,7 +98,13 @@ import { PlaceOrderrPageComponent } from './pages/place-orderr-page/place-orderr
     CartPageComponent,
     PlaceOrderrPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule,
+  ],
   providers: [ApiModule, Api],
   bootstrap: [AppComponent],
 })

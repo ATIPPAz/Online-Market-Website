@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-light p-0" style="margin-bottom: 16px">
   <div class="container-fluid p-0">
     <div class="bg-white w-100 logo d-flex">
-      <a class="navbar-brand my-auto" href="#">PAIMARKET</a>
+      <a class="navbar-brand my-auto" routerLink="#">PAIMARKET</a>
     </div>
     <div class="container-fluid" style="background-color: #f4f7f8">
       <div class="row menu gy-4">
@@ -64,9 +64,11 @@
               />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="/login">login</a></li>
-              <li><a class="dropdown-item" href="/register">register </a></li>
-              <li><a class="dropdown-item" href="/">logout </a></li>
+              <li><a class="dropdown-item" routerLink="/login">login</a></li>
+              <li>
+                <a class="dropdown-item" routerLink="/register">register </a>
+              </li>
+              <li><a class="dropdown-item" routerLink="/">logout </a></li>
             </ul>
           </div>
         </div>
