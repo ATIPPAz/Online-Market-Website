@@ -16,7 +16,7 @@ export class LoginComponent {
   login() {
     this._api.login({ username: this.username, password: this.password }).subscribe(e => {
       if(e.status === 200){
-        localStorage.setItem("userToken", e.data.token)
+        this._api.setToken(e.data.token)
         this.router.navigateByUrl('/home')
       }
       else{

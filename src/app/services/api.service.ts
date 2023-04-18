@@ -25,12 +25,20 @@ export class ApiService {
   login({username,password}): Observable<{ status: number,data: {token:string} }> {
     return this._http.post<{ status: number, data: {token:string}  }>(`${this.apiUr}/login`,{username,password})
   }
+  setToken(token){
+    localStorage.setItem("userToken", token)
+  }
   logout():void {
     localStorage.removeItem("userToken")
     this.router.navigate(['/home'])
   }
   isLogin(){
     return  localStorage.getItem('userToken') === "" || !localStorage.getItem('userToken')?false:true
+  }
+  register(user): Observable<{ status: number,data: {token:string} }> {
+    console.log(user);
+    
+    return this._http.post<{ status: number, data: {token:string}  }>(`${this.apiUr}/register`,{...user})
   }
   goToLoginPage(){
     this.logout()
