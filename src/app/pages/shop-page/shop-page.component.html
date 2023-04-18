@@ -33,11 +33,12 @@
         </div>
       </div>
     </div>
-    <div class="col-md-8" *ngIf="!hasProduct(); else noData">
-      No Product Data
+    <div class="col-md-8" *ngIf="hasProduct(); else noData">
+      <app-shop [shopData]="productData" />
+
     </div>
     <ng-template #noData class="col-md-8">
-      <app-shop [shopData]="productData" />
+      No Product Data
     </ng-template>
     <!-- <div align="center">
       <button onClick="history.go(1)" class="botton">See More</button>
