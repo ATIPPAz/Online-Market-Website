@@ -1,9 +1,24 @@
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 280px;
-  max-height: 354px;
   text-align: center;
-  font-family: arial;
+  font-family: DM Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+}
+
+.content {
+  padding: 48px;
+}
+
+.box {
+  position: relative;
+}
+
+.like-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .img {

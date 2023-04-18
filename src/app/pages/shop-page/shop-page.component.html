@@ -9,22 +9,11 @@
         <div class="col" style="margin-left: 112px">
           <p class="title">
             Price
-            <img
-              src="https://img.icons8.com/ios/50/000000/filled-filter.png"
-              width="24px"
-              height="24px"
-              align="right"
-            />
+            <img src="https://img.icons8.com/ios/50/000000/filled-filter.png" width="24px" height="24px"
+              align="right" />
           </p>
           <div>
-            <input
-              type="range"
-              id="volume"
-              name="volume"
-              min="0"
-              max="1000"
-              style="width: 500px"
-            />
+            <input type="range" id="volume" name="volume" min="0" max="1000" style="width: 500px" />
             <label for="cowbell">Range 1-1000</label>
           </div>
         </div>
@@ -36,12 +25,8 @@
 
           <br />
           <div *ngFor="let catagory of catagoriesData">
-            <app-categories-product
-              [id]="catagory.catagoryId"
-              [name]="catagory.catagoryName"
-              (select)="fecthDataWithCatagory($event)"
-            >
-            </app-categories-product>
+            <app-categories-product [id]="catagory.catagoryId" [name]="catagory.catagoryName"
+              (select)="fecthDataWithCatagory($event)" />
           </div>
         </div>
       </div>
