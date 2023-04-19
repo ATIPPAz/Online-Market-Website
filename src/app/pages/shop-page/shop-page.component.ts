@@ -11,6 +11,7 @@ import { Shop } from '../../interfaces/shop'
   styleUrls: ['./shop-page.component.css'],
 })
 export class ShopPageComponent {
+  valueScroll:number = 1
   shopId: string = ''
   marketId: string = ''
   shopData: Shop

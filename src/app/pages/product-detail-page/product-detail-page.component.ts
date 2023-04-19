@@ -14,9 +14,9 @@ export class ProductDetailPageComponent {
   shopId: string
   marketId: string
   productId: string
-  productData: Product
-  marketData: Market
-  shopData: Shop
+  productData: Product = {catagoryId:"",productCoverImg:"",productDescribe:"",productDetail:"",productId:"",productImg:[],productName:"",productPrice:0,productQty:0,shopId:""}
+  marketData: Market = {marketName:"",marketDescribe:"",marketId:"",marketImg:"",marketIntroImg:"",readmore:""}
+  shopData: Shop = {catagoryId:"",shopDescribe:"",  marketId:"",shopId:"",shopImg:"",shopName:""}
   constructor(private routedata: ActivatedRoute, private api: ApiService) {}
   ngOnInit(): void {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
