@@ -11,7 +11,7 @@ import { Shop } from '../../interfaces/shop'
   styleUrls: ['./shop-page.component.css'],
 })
 export class ShopPageComponent {
-  valueScroll:number = 1
+  valueScroll: number = 1
   shopId: string = ''
   marketId: string = ''
   shopData: Shop
@@ -19,18 +19,18 @@ export class ShopPageComponent {
   catagoryId: string = ''
   catagoriesData: Catagory[] = []
   productData: Product[] = []
-  constructor(private routedata: ActivatedRoute, private api: ApiService) {}
+  constructor(private routedata: ActivatedRoute, private api: ApiService) { }
   ngOnInit(): void {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
-    this.api.getOneShop(this.shopId).subscribe((e) => {
+    this.api.Api().shop.getOneShop(this.shopId).subscribe((e) => {
       this.shopData = e.data
       this.shopName = this.shopData.shopName
     })
 
-    this.api.getAllProduct(`shopId=${this.shopId}`).subscribe((e) => {
+    this.api.Api().product.getAllProduct(`shopId=${this.shopId}`).subscribe((e) => {
       this.productData = e.data
     })
-    this.api.getAllCatagory().subscribe((e) => {
+    this.api.Api().catagory.getAllCatagory().subscribe((e) => {
       this.catagoriesData = e.data
     })
   }
@@ -45,7 +45,7 @@ export class ShopPageComponent {
   }
   fecthDataWithCatagory(id) {
     this.catagoryId = id
-    this.api
+    this.api.Api().product
       .getAllProduct(`shopId=${this.shopId}&catagoryId=${id}`)
       .subscribe((r) => {
         this.productData = r.data
