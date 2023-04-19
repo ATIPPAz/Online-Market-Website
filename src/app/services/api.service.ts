@@ -12,7 +12,7 @@ import {  Router } from '@angular/router';
 export class ApiService {
   headers:HttpHeaders
   apiUr: string =
-    'https://046e-2001-fb1-91-dd9f-5929-27a7-2a1f-8cf3.ngrok-free.app/api/v1'
+    'https://00c7-2001-fb1-91-dd9f-7ded-9801-3489-6b12.ngrok-free.app/api/v1'
     token:string
   constructor(private _http: HttpClient,private router: Router) {
     this.token = localStorage.getItem('userToken')
