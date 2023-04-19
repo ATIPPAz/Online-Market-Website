@@ -1,12 +1,12 @@
 import { Component } from '@angular/core'
-import { TopShop } from '../../interfaces/topShopInterface'
+// import { TopShop } from '../../interfaces/topShopInterface'
 @Component({
   selector: 'app-our-shops',
   templateUrl: './our-shops.component.html',
   styleUrls: ['./our-shops.component.css'],
 })
 export class OurShopsComponent {
-  data: TopShop[] = [
+  data: any[] = [
     {
       marketImg:
         'https://media.discordapp.net/attachments/1079420055776940043/1094531618821111859/image_29.png?width=261&height=321',
