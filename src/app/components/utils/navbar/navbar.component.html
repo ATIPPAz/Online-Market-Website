@@ -36,11 +36,11 @@
               <img src="../../../../assets/icons/UserProfile.svg" class="icon" alt="profile" />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" *ngIf="!_api.isLogin()" routerLink="/login">login</a></li>
+              <li><a class="dropdown-item" *ngIf="!_api.Api().auth.isLogin()" routerLink="/login">login</a></li>
               <li>
-                <a class="dropdown-item" *ngIf="!_api.isLogin()" routerLink="/register">register </a>
+                <a class="dropdown-item" *ngIf="!_api.Api().auth.isLogin()" routerLink="/register">register </a>
               </li>
-              <li><a class="dropdown-item" *ngIf="_api.isLogin()" (click)="logout()">logout</a></li>
+              <li><a class="dropdown-item" *ngIf="_api.Api().auth.isLogin()" (click)="logout()">logout</a></li>
             </ul>
           </div>
         </div>
