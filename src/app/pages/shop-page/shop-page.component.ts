@@ -25,10 +25,13 @@ export class ShopPageComponent {
     this.api.Api().shop.getOne(this.shopId).subscribe((e) => {
       this.shopData = e.data
       this.shopName = this.shopData.shopName
+
+
     })
 
     this.api.Api().product.getAll(`shopId=${this.shopId}`).subscribe((e) => {
       this.productData = e.data
+      console.log(this.productData);
     })
     this.api.Api().catagory.getAll().subscribe((e) => {
       this.catagoriesData = e.data

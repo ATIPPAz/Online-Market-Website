@@ -10,6 +10,7 @@ import { MarketApi } from './market'
 import { ShopApi } from './shop'
 import { UserApi } from './user'
 import { PaymentApi } from './payment'
+import { FavoriteApi } from './favorite'
 
 
 
@@ -43,7 +44,8 @@ export class ApiService {
       market: new MarketApi(this._http, this.apiUr, this.headers),
       shop: new ShopApi(this._http, this.apiUr, this.headers),
       user: new UserApi(this._http, this.apiUr, this.headers),
-      order: new OrderApi(this._http, this.apiUr, this.headers)
+      order: new OrderApi(this._http, this.apiUr, this.headers),
+      favorite: new FavoriteApi(this._http, this.apiUr, this.headers)
     }
 
 
