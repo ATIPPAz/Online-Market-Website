@@ -27,7 +27,6 @@ export class AuthApi {
     return localStorage.getItem('userToken') === "" || !localStorage.getItem('userToken') ? false : true
   }
   register(user): Observable<{ status: number, data: { token: string } }> {
-
     return this._http.post<{ status: number, data: { token: string } }>(`${this.apiUr}/register`, { ...user })
   }
   goToLoginPage() {

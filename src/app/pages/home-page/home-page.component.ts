@@ -10,7 +10,7 @@ export class HomeComponentPage {
   marketData: Market[] = []
   randomShopData: Market[] = []
   constructor(private _api: ApiService) {
-    this._api.Api().market.getAllMarket().subscribe((data) => {
+    this._api.Api().market.getAll().subscribe((data) => {
       this.marketData = data.data
       this._api.Api().market.getAllRandomShop().subscribe((e) => {
         this.randomShopData = e.data

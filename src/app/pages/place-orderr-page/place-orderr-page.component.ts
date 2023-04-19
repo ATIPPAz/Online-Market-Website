@@ -19,22 +19,27 @@ export class PlaceOrderrPageComponent {
   constructor(private routedata: ActivatedRoute, private _api: ApiService) {
 
   }
+  getProduct() {
+    this._api.Api().product.getOne(this.productIdByParam).subscribe(e => {
+      console.log(e.data);
+      this.productData = e.data
+    }
+    )
+
+  }
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.productIdByParam = this.routedata.snapshot.paramMap.get('productId')
     this.orderIdByParam = this.routedata.snapshot.paramMap.get('orderId')
+
     this._api.Api().user.getUserData().subscribe(e => {
       this.user = e.data
       console.log(e.data);
 
     })
     if (!this.orderIdByParam) {
-      this._api.Api().product.getOneProduct(this.productIdByParam).subscribe(e => {
-        console.log(e.data);
-        this.productData = e.data
-      }
-      )
+      this.getProduct()
       this.pagetype = 'craete order'
     }
     else {
@@ -48,15 +53,49 @@ export class PlaceOrderrPageComponent {
 
   }
   buyOrder() {
-    this._api.Api().order.get()
-    this._api.Api().product.getAllProduct().subscribe(e => {
-      console.log('teste');
+    // this._api.Api().order.get()
 
-      console.log(
-        e.data
+    try {
+      this._api.Api().shop.getOne(this.productData.shopId).subscribe(d => {
+        console.log(
+          d.data
+        );
+        const currentdate = new Date().toLocaleString();
+        const order = {
+          userId: this.user._id,
+          orderDate: currentdate,
+          orderStatusId: "2",
+          orderProduct: [
+            {
+              productId: this.productData.productId,
+              productPrice: this.productData.productPrice,
+              productQty: this.qty
+            }
+          ],
+          marketId: d.data.marketId,
+          shopId: d.data.shopId
+        }
+        this._api.Api().order.create(order).subscribe(e => {
+          console.log(e.data);
+          alert('จ่ายสำเร็จ')
+          this.getProduct()
+        })
+      })
+    }
+    catch (err) {
+      alert(err.maasage)
+    }
 
-      );
-    })
+
+    // "2019-01-01T00:00:00
+    // const date = currentdate.getFullYear() + "-"
+    //   + (currentdate.getMonth() + 1) + "-"
+    //   + currentdate.getDate() + "T"
+    //   + currentdate.getHours() + ":"
+    //   + currentdate.getMinutes() + ":"
+    //   + currentdate.getSeconds()
+
+
 
     //puechase method
 

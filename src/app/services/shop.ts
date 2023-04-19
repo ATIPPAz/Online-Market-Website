@@ -13,7 +13,7 @@ export class ShopApi {
     this.headers = header
   }
 
-  getOneShop(
+  getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Shop }> {
@@ -21,7 +21,7 @@ export class ShopApi {
       `${this.apiUr}/shop/${id}?${queryString ? queryString : ''}`
       , { headers: this.headers })
   }
-  getAllShop(
+  getAll(
     queryString: string = null
   ): Observable<{ status: number; data: Shop[] }> {
     return this._http.get<{ status: number; data: Shop[] }>(

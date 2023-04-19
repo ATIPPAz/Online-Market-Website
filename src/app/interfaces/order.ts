@@ -1,4 +1,4 @@
-export interface Market {
+export interface Order {
   userId: string
   orderId: string
   orderDate: string

@@ -11,7 +11,7 @@ export class MarketApi {
     this.apiUr = url
     this.headers = header
   }
-  getOneMarket(
+  getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Market }> {
@@ -19,7 +19,7 @@ export class MarketApi {
       `${this.apiUr}/market/${id}?${queryString ? queryString : ''}`
       , { headers: this.headers })
   }
-  getAllMarket(
+  getAll(
     queryString: string = null
   ): Observable<{ status: number; data: Market[] }> {
     return this._http.get<{ status: number; data: Market[] }>(

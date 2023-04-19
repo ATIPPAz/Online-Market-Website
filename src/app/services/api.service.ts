@@ -42,9 +42,7 @@ export class ApiService {
       market: new MarketApi(this._http, this.apiUr, this.headers),
       shop: new ShopApi(this._http, this.apiUr, this.headers),
       user: new UserApi(this._http, this.apiUr, this.headers),
-      // order: new OrderApi(this._http, this.apiUr, this.headers)
-      order: new OrderApi()
-
+      order: new OrderApi(this._http, this.apiUr, this.headers)
     }
   }
 }
