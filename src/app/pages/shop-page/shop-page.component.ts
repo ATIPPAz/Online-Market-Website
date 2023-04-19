@@ -22,15 +22,15 @@ export class ShopPageComponent {
   constructor(private routedata: ActivatedRoute, private api: ApiService) { }
   ngOnInit(): void {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
-    this.api.Api().shop.getOneShop(this.shopId).subscribe((e) => {
+    this.api.Api().shop.getOne(this.shopId).subscribe((e) => {
       this.shopData = e.data
       this.shopName = this.shopData.shopName
     })
 
-    this.api.Api().product.getAllProduct(`shopId=${this.shopId}`).subscribe((e) => {
+    this.api.Api().product.getAll(`shopId=${this.shopId}`).subscribe((e) => {
       this.productData = e.data
     })
-    this.api.Api().catagory.getAllCatagory().subscribe((e) => {
+    this.api.Api().catagory.getAll().subscribe((e) => {
       this.catagoriesData = e.data
     })
   }
@@ -46,7 +46,7 @@ export class ShopPageComponent {
   fecthDataWithCatagory(id) {
     this.catagoryId = id
     this.api.Api().product
-      .getAllProduct(`shopId=${this.shopId}&catagoryId=${id}`)
+      .getAll(`shopId=${this.shopId}&catagoryId=${id}`)
       .subscribe((r) => {
         this.productData = r.data
       })

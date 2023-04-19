@@ -11,14 +11,14 @@ export class ProductApi {
     this.url = url
     this.headers = header
   }
-  getAllProduct(
+  getAll(
     queryString: string = null
   ): Observable<{ status: number; data: Product[] }> {
     return this._http.get<{ status: number; data: Product[] }>(
       `${this.url}/product?${queryString ? queryString : ''}`
       , { headers: this.headers })
   }
-  getOneProduct(
+  getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Product }> {

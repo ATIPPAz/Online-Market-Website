@@ -22,26 +22,17 @@ export class ProductDetailPageComponent {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
     this.marketId = this.routedata.snapshot.paramMap.get('marketId')
     this.productId = this.routedata.snapshot.paramMap.get('productId')
-    this.api.Api().market.getOneMarket(this.marketId).subscribe((e) => {
+    this.api.Api().market.getOne(this.marketId).subscribe((e) => {
       this.marketData = e.data
       console.log(e.data)
     })
-    this.api.Api().shop.getOneShop(this.shopId).subscribe((e) => {
+    this.api.Api().shop.getOne(this.shopId).subscribe((e) => {
       this.shopData = e.data
       console.log(e.data)
     })
-    this.api.Api().product.getOneProduct(this.productId).subscribe((e) => {
+    this.api.Api().product.getOne(this.productId).subscribe((e) => {
       this.productData = e.data
       console.log(e.data)
     })
-  }
-  value: number = 1
-  plus() {
-    this.value++
-  }
-  minus() {
-    if (this.value > 0) {
-      this.value--
-    }
   }
 }

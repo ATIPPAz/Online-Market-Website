@@ -11,14 +11,14 @@ export class CatagoryApi {
     this.apiUr = url
     this.headers = header
   }
-  getAllCatagory(
+  getAll(
     queryString: string = null
   ): Observable<{ status: number; data: Catagory[] }> {
     return this._http.get<{ status: number; data: Catagory[] }>(
       `${this.apiUr}/catagory?${queryString ? queryString : ''}`
       , { headers: this.headers })
   }
-  getOneCatagory(
+  getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Catagory }> {
