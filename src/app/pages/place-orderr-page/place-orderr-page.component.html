@@ -50,14 +50,14 @@
           Merchandise Subtotal: {{productData.productPrice * qty || 0}} THB
         </p>
         <p Align="right">
-          shipping Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 THB
+          shipping Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{shipping}} THB
         </p>
         <p Align="right">
-          Total Payment: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;99 THB
+          Total Payment: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{shipping + productData.productPrice * qty || 0}} THB
         </p>
       </div>
       <div align="right">
-        <button _ngcontent-slo-c82="" onclick="history.go(1)" class="orderBut">
+        <button (click)="buyOrder()" _ngcontent-slo-c82="" onclick="history.go(1)" class="orderBut">
           Place Order
         </button>
       </div>

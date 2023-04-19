@@ -7,8 +7,8 @@ import { ApiService } from '../../../services/api.service'
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  _api:ApiService
-  constructor(private router: Router, _api :ApiService) {
+  _api: ApiService
+  constructor(private router: Router, _api: ApiService) {
     this._api = _api
   }
   ngOnInit(): void {
@@ -19,7 +19,7 @@ export class NavbarComponent {
     const nav = document.getElementById(page)
     nav.classList.add('navClick')
   }
-  logout(){
-  this._api.logout()
+  logout() {
+    this._api.Api().auth.logout()
   }
 }
