@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { ApiService } from '../../services/api.service'
 import { Router } from '@angular/router'
-import { Location } from '@angular/common';
+import { Location, PlatformLocation } from '@angular/common';
 @Component({
   selector: 'app-components-login',
   templateUrl: './login.component.html',
@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
 export class LoginComponent {
   username: string
   password: string
-  constructor(private _api: ApiService, private router: Router, private location: Location) {
+  constructor(private _api: ApiService, private router: Router, private location: Location, private platformLocation: PlatformLocation) {
 
   }
   ngOnInit(): void {
@@ -22,7 +22,13 @@ export class LoginComponent {
     this._api.Api().auth.login({ username: this.username, password: this.password }).subscribe(e => {
       if (e.status === 200) {
         this._api.Api().auth.setToken(e.data.token)
-        this.location.back();
+        const canGoBack = !!(this.router.getCurrentNavigation()?.previousNavigation)
+        if (canGoBack) {
+          this.location.back();
+        }
+        else {
+          this.router.navigateByUrl('/home')
+        }
       }
       else {
         alert('username or password invalid')
