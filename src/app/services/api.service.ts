@@ -3,6 +3,7 @@ import { HttpClient,HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs'
 import { Catagory } from '../interfaces/catagory'
 import { Market } from '../interfaces/market'
+import { User } from '../interfaces/users'
 import { Product } from '../interfaces/product'
 import { Shop } from '../interfaces/shop'
 import {  Router } from '@angular/router';
@@ -17,7 +18,7 @@ export class ApiService {
   constructor(private _http: HttpClient,private router: Router) {
     this.token = localStorage.getItem('userToken')
     console.log(this.token);
-    const headers = new HttpHeaders({
+    this.headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`
     });
@@ -32,12 +33,14 @@ export class ApiService {
     localStorage.removeItem("userToken")
     this.router.navigate(['/home'])
   }
+  getUserData(): Observable<{ status: number,data: User}> {
+    return this._http.get<{ status: number, data: User  }>(`${this.apiUr}/user`,{headers:this.headers})
+  }
   isLogin(){
     return  localStorage.getItem('userToken') === "" || !localStorage.getItem('userToken')?false:true
   }
   register(user): Observable<{ status: number,data: {token:string} }> {
-    console.log(user);
-    
+
     return this._http.post<{ status: number, data: {token:string}  }>(`${this.apiUr}/register`,{...user})
   }
   goToLoginPage(){

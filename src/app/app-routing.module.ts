@@ -83,7 +83,10 @@ const routes: Routes = [
         component: CartPageComponent,
       },
       {
-        path: 'order/:id',
+        path: 'order/:orderId',
+        component: PlaceOrderrPageComponent,
+      },{
+        path: 'order/product/:productId',
         component: PlaceOrderrPageComponent,
       },
       // {
