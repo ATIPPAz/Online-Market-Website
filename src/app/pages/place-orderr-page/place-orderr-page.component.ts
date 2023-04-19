@@ -2,6 +2,8 @@ import { Component } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { Product } from '../../interfaces/product'
 import { ApiService } from '../../services/api.service'
+import { ControllerService } from '../../services/controller.service'
+
 import { User } from 'src/app/interfaces/users'
 @Component({
   selector: 'app-place-orderr-page',
@@ -12,11 +14,12 @@ export class PlaceOrderrPageComponent {
   productIdByParam: string
   orderIdByParam: string
   pagetype: string
+  moneyRemain: string
   shipping: number = 0
   productData: Product = { catagoryId: '', productCoverImg: '', productDescribe: '', productDetail: '', productId: '', productImg: [], productName: '', productPrice: 0, productQty: 0, shopId: '', }
   qty: number = 1
   user: User = { address: '', email: '', firstName: '', img: '', lastName: '', password: '', userId: '', username: '', phone: '' }
-  constructor(private routedata: ActivatedRoute, private _api: ApiService) {
+  constructor(private routedata: ActivatedRoute, private _api: ApiService, private ctl: ControllerService) {
 
   }
   getProduct() {
@@ -52,10 +55,13 @@ export class PlaceOrderrPageComponent {
     console.log(this.qty);
 
   }
-  buyOrder() {
+  async buyOrder() {
     // this._api.Api().order.get()
 
     try {
+      // this._api.
+      this.ctl.disableBtn()
+
       this._api.Api().shop.getOne(this.productData.shopId).subscribe(d => {
         console.log(
           d.data
@@ -75,30 +81,50 @@ export class PlaceOrderrPageComponent {
           marketId: d.data.marketId,
           shopId: d.data.shopId
         }
-        this._api.Api().order.create(order).subscribe(e => {
-          console.log(e.data);
-          alert('จ่ายสำเร็จ')
-          this.getProduct()
+        const totalPrice = order.orderProduct.reduce((acc, product) => {
+          const productTotal = product.productPrice * product.productQty;
+          return acc + productTotal;
+        }, 0);
+
+        this._api.Api().payment.getOne(this.user._id).subscribe(e => {
+          if (e.data.accountId) {
+            this._api.Api().payment.paidBill(e.data.accountId, totalPrice).subscribe(e => {
+              console.log(e.data);
+              this.moneyRemain = e.data.money
+              console.log(this.moneyRemain);
+              alert('จ่ายสำเร็จคงเหลือ ' + this.moneyRemain + ' บาท')
+              this._api.Api().order.create(order).subscribe(e => {
+                console.log(e.data);
+                alert('ทำ order สำเร็จ')
+                this.getProduct()
+                this.ctl.enableBtn()
+
+              }, (error) => alert(`เกิดข้อผิดพลาด`), () => {
+                this.ctl.enableBtn()
+              })
+            },
+              err => {
+                const noti = `${err.error.data === 1 ? 'เงินไม่พอจ่าย' : err.error.data === 2 ? 'ไม่พบบัญชีธนาคาร' : 'เกิดข้อผิดพลาด'}`
+                alert(noti)
+                this.ctl.enableBtn()
+              })
+          }
+          else {
+            //goto payment 
+          }
         })
+
+
+      }, (error) => alert(`เกิดข้อผิดพลาด`), () => {
+        this.ctl.enableBtn()
       })
     }
     catch (err) {
       alert(err.maasage)
     }
+    finally {
+      this.ctl.enableBtn()
 
-
-    // "2019-01-01T00:00:00
-    // const date = currentdate.getFullYear() + "-"
-    //   + (currentdate.getMonth() + 1) + "-"
-    //   + currentdate.getDate() + "T"
-    //   + currentdate.getHours() + ":"
-    //   + currentdate.getMinutes() + ":"
-    //   + currentdate.getSeconds()
-
-
-
-    //puechase method
-
-    //create order status paid
+    }
   }
 }

@@ -9,6 +9,7 @@ import { CatagoryApi } from './catagory'
 import { MarketApi } from './market'
 import { ShopApi } from './shop'
 import { UserApi } from './user'
+import { PaymentApi } from './payment'
 
 
 
@@ -32,11 +33,11 @@ export class ApiService {
 
   }
   Api() {
-    return {
 
+    return {
       product: new ProductApi(this._http, this.apiUr, this.headers),
       auth: new AuthApi(this._http, this.apiUr, this.headers, this.router),
-      // cart: new CartApi(this._http, this.apiUr, this.headers),
+      payment: new PaymentApi(this._http, this.apiUr, this.headers),
       cart: new CartApi(),
       catagory: new CatagoryApi(this._http, this.apiUr, this.headers),
       market: new MarketApi(this._http, this.apiUr, this.headers),
@@ -44,5 +45,7 @@ export class ApiService {
       user: new UserApi(this._http, this.apiUr, this.headers),
       order: new OrderApi(this._http, this.apiUr, this.headers)
     }
+
+
   }
 }
