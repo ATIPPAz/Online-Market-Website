@@ -1,8 +1,6 @@
 //module
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { ApiModule } from './modules/api.module'
-import { Api } from './modules/api'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
@@ -111,7 +109,7 @@ import { FavoritePageComponent } from './components/favorite-page/favorite-page.
     FormsModule,
     RouterModule,
   ],
-  providers: [ApiModule, Api],
+  providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
