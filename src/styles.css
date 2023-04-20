@@ -15,4 +15,10 @@ body {
 
 .bg-main-color {
   background-color: #5f1e03;
+  color: white;
+}
+
+.bg-main-color:hover {
+  color: white;
+  background-color: #3e1402;
 }

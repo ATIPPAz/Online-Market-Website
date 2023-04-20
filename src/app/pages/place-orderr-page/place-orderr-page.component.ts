@@ -106,6 +106,18 @@ export class PlaceOrderrPageComponent {
               err => {
                 const noti = `${err.error.data === 1 ? 'เงินไม่พอจ่าย' : err.error.data === 2 ? 'ไม่พบบัญชีธนาคาร' : 'เกิดข้อผิดพลาด'}`
                 alert(noti)
+                if (err.error.data === 2) {
+                  const data = window.prompt('กรอก account Id')
+                  const accountId = parseInt(data)
+                  console.log(accountId)
+
+                  if (accountId) {
+                    // this._api.Api().payment.create({ accountId }).subscribe(e => {
+                    //   alert(`เพิ่มสำเร็จ`)
+                    // })
+                  }
+
+                }
                 this.ctl.enableBtn()
               })
           }

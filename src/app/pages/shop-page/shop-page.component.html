@@ -1,23 +1,33 @@
-<div class="container-fluid">
-  <div class="row">
-    <app-title-shop [title]="shopName"></app-title-shop>
+<div class="container-fluid p-0">
+  <div class="row bg-light">
+    <app-title-shop [title]="shopName" />
   </div>
   <br />
   <div class="row">
     <div class="col-md-4">
       <div class="row">
         <div class="col" style="margin-left: 112px">
-          <p class="title">
-            <input type="text" [(ngModel)]="valueScroll" />
-            Price {{valueScroll}}
-            <img src="https://img.icons8.com/ios/50/000000/filled-filter.png" width="24px" height="24px"
-              align="right" />
-          </p>
-          <div>
-            <input type="range" id="volume" name="volume" min="0" max="1000" style="width: 500px"
-              [(ngModel)]="valueScroll" />
-            <label for="cowbell">Range 1-1000</label>
+          <div class="row gy-2">
+            <div class="col-12">
+              <p class="title">
+                Price {{valueScroll}}
+                <img style="cursor: pointer;" src="https://img.icons8.com/ios/50/000000/filled-filter.png" width="24px"
+                  height="24px" align="right" />
+              </p>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" [(ngModel)]="valueScroll" />
+            </div>
+            <div class="col-12">
+              <input type="range" class="w-100" id="volume" name="volume" min="0" max="1000"
+                [(ngModel)]="valueScroll" />
+              <label for="cowbell">Range 1-1000</label>
+            </div>
           </div>
+
+
+
+
         </div>
       </div>
       <div class="row margin">
