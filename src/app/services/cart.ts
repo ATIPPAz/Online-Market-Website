@@ -1,3 +1,1 @@
-export class CartApi {
-
-}
+export class CartApi {}

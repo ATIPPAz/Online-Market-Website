@@ -14,9 +14,7 @@ export class ProductDetailComponent {
   @Input('shop') shop: Shop
   @Input('product') product: Product
   qty: number = 1
-  constructor(private router: Router, private api: ApiService) {
-
-  }
+  constructor(private router: Router, private api: ApiService) {}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -31,7 +29,6 @@ export class ProductDetailComponent {
     } else {
       alert('กรุณาไปล้อคอินเดี๋ยวนี้นะคะ !!')
       this.router.navigate(['/login'])
-
     }
   }
 }

@@ -9,7 +9,7 @@ export interface Order {
       productPrice: number
       productQty: number
     }
-  ],
+  ]
   marketId: string
   shopId: string
 }

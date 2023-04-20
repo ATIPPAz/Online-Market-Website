@@ -6,7 +6,10 @@
     <div class="container-fluid" style="background-color: #f4f7f8">
       <div class="row menu gy-4">
         <div class="col-12 col-xl-3 col-xs-12">
-          <div class="d-flex align-items-center justify-content-between" id="nav">
+          <div
+            class="d-flex align-items-center justify-content-between"
+            id="nav"
+          >
             <a class="navlink" href="/home" id="home">Home</a>
             <span class="sf">/</span>
             <a class="navlink" href="/market" id="market">Market</a>
@@ -20,27 +23,71 @@
         </div>
         <div class="col-12 col-xl-7">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search What you need"
-              aria-describedby="basic-addon1" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search What you need"
+              aria-describedby="basic-addon1"
+            />
             <button class="input-group-text" id="basic-addon1">
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
         </div>
         <div class="col-xl-2 d-flex align-items-center justify-content-between">
-          <img src="../../../../assets/icons/Heart.svg" alt="heart" class="icon" />
-          <img src="../../../../assets/icons/NotificationBell.svg" class="icon" alt="bell" />
-          <img src="../../../../assets/icons/Cart.svg" class="icon" alt="cart" />
+          <img
+            src="../../../../assets/icons/Heart.svg"
+            alt="heart"
+            class="icon"
+          />
+          <img
+            src="../../../../assets/icons/NotificationBell.svg"
+            class="icon"
+            alt="bell"
+          />
+          <img
+            src="../../../../assets/icons/Cart.svg"
+            class="icon"
+            alt="cart"
+          />
           <div>
-            <button class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../../../../assets/icons/UserProfile.svg" class="icon" alt="profile" />
+            <button
+              class="dropdown-toggle"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../../../../assets/icons/UserProfile.svg"
+                class="icon"
+                alt="profile"
+              />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" *ngIf="!_api.Api().auth.isLogin()" routerLink="/login">login</a></li>
               <li>
-                <a class="dropdown-item" *ngIf="!_api.Api().auth.isLogin()" routerLink="/register">register </a>
+                <a
+                  class="dropdown-item"
+                  *ngIf="!_api.Api().auth.isLogin()"
+                  routerLink="/login"
+                  >login</a
+                >
               </li>
-              <li><a class="dropdown-item" *ngIf="_api.Api().auth.isLogin()" (click)="logout()">logout</a></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  *ngIf="!_api.Api().auth.isLogin()"
+                  routerLink="/register"
+                  >register
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  *ngIf="_api.Api().auth.isLogin()"
+                  (click)="logout()"
+                  >logout</a
+                >
+              </li>
             </ul>
           </div>
         </div>

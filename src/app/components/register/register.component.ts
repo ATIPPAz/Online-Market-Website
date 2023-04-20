@@ -14,9 +14,7 @@ export class RegisterComponent {
   password: string
   phone: string
   email: string
-  constructor(private _api: ApiService, private router: Router) {
-
-  }
+  constructor(private _api: ApiService, private router: Router) {}
   register() {
     console.log(this.firstName)
     console.log(this.lastName)
@@ -25,20 +23,23 @@ export class RegisterComponent {
     console.log(this.password)
     console.log(this.phone)
     console.log(this.email)
-    this._api.Api().auth.register({
-      firstName: this.firstName,
-      lastName: this.lastName,
-      username: this.username,
-      address: this.address,
-      password: this.password,
-      phone: this.phone,
-      email: this.email,
-      img: ""
-    }).subscribe(e => {
-      if (e.status === 201) {
-        this._api.Api().auth.setToken(e.data.token)
-        this.router.navigateByUrl('/home')
-      }
-    })
+    this._api
+      .Api()
+      .auth.register({
+        firstName: this.firstName,
+        lastName: this.lastName,
+        username: this.username,
+        address: this.address,
+        password: this.password,
+        phone: this.phone,
+        email: this.email,
+        img: '',
+      })
+      .subscribe((e) => {
+        if (e.status === 201) {
+          this._api.Api().auth.setToken(e.data.token)
+          this.router.navigateByUrl('/home')
+        }
+      })
   }
 }

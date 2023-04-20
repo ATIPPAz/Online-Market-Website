@@ -1,16 +1,16 @@
-import { Component,Input,Output,EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 
 @Component({
   selector: 'app-spinner',
   templateUrl: './spinner.component.html',
-  styleUrls: ['./spinner.component.css']
+  styleUrls: ['./spinner.component.css'],
 })
 export class SpinnerComponent {
   value: string = '1'
   @Input('max') max: number = 1
-  @Input('min') min: number= 1
+  @Input('min') min: number = 1
   @Output() changeValue = new EventEmitter<any>()
-  emitValue(){
+  emitValue() {
     this.changeValue.emit(parseInt(this.value))
   }
   check() {
@@ -19,55 +19,49 @@ export class SpinnerComponent {
       if (qty > this.max && qty > this.min) {
         this.value = '1'
         window.alert(`กรุณากรอกตั้งเเต่ ${this.min} ถึง ${this.max} ชิ้น`)
+      } else {
+        this.value = qty.toString()
       }
-      else{
-         this.value = qty.toString()
-      }
-    }
-    else {
+    } else {
       window.alert(`กรุณากรอกตัวเลข`)
       this.value = '1'
     }
-  this.emitValue()
+    this.emitValue()
   }
   plus() {
-      const plus = document.getElementById('plus')
-      const minus = document.getElementById('minus')
-
+    const plus = document.getElementById('plus')
+    const minus = document.getElementById('minus')
 
     let qty = parseInt(this.value)
     if (qty < this.max) {
-      plus.style.cursor = "pointer"
+      plus.style.cursor = 'pointer'
       minus.style.cursor = 'pointer'
       qty++
-      this.value = (qty).toString()
+      this.value = qty.toString()
       this.emitValue()
- if(qty===this.max){
-      plus.style.cursor = 'not-allowed'
+      if (qty === this.max) {
+        plus.style.cursor = 'not-allowed'
       }
-    }
-    else{
+    } else {
       minus.style.cursor = 'pointer'
-      plus.style.cursor = "not-allowed"
+      plus.style.cursor = 'not-allowed'
     }
   }
   minus() {
-     const plus = document.getElementById('plus')
+    const plus = document.getElementById('plus')
     const minus = document.getElementById('minus')
     let qty = parseInt(this.value)
     if (qty > this.min) {
       qty--
-      this.value = (qty).toString()
+      this.value = qty.toString()
       this.emitValue()
-      if(qty===this.min){
-      minus.style.cursor = 'not-allowed'
+      if (qty === this.min) {
+        minus.style.cursor = 'not-allowed'
       }
-      plus.style.cursor = "pointer"
-    }
-    else{
-     plus.style.cursor = "pointer"
+      plus.style.cursor = 'pointer'
+    } else {
+      plus.style.cursor = 'pointer'
       minus.style.cursor = 'not-allowed'
     }
   }
-
 }

@@ -10,24 +10,36 @@
           <div class="row gy-2">
             <div class="col-12">
               <p class="title">
-                Price {{valueScroll}}
-                <img style="cursor: pointer;" src="https://img.icons8.com/ios/50/000000/filled-filter.png" width="24px"
-                  height="24px" align="right" />
+                Price {{ valueScroll }}
+                <img
+                  style="cursor: pointer"
+                  src="https://img.icons8.com/ios/50/000000/filled-filter.png"
+                  width="24px"
+                  height="24px"
+                  align="right"
+                />
               </p>
             </div>
             <div class="col-12">
-              <input type="text" class="form-control" [(ngModel)]="valueScroll" />
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="valueScroll"
+              />
             </div>
             <div class="col-12">
-              <input type="range" class="w-100" id="volume" name="volume" min="0" max="1000"
-                [(ngModel)]="valueScroll" />
+              <input
+                type="range"
+                class="w-100"
+                id="volume"
+                name="volume"
+                min="0"
+                max="1000"
+                [(ngModel)]="valueScroll"
+              />
               <label for="cowbell">Range 1-1000</label>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
       <div class="row margin">
@@ -37,8 +49,11 @@
 
           <br />
           <div *ngFor="let catagory of catagoriesData">
-            <app-categories-product [id]="catagory.catagoryId" [name]="catagory.catagoryName"
-              (select)="fecthDataWithCatagory($event)" />
+            <app-categories-product
+              [id]="catagory.catagoryId"
+              [name]="catagory.catagoryName"
+              (select)="fecthDataWithCatagory($event)"
+            />
           </div>
         </div>
       </div>

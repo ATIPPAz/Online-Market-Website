@@ -11,8 +11,10 @@ export class UserApi {
     this.apiUr = url
     this.headers = header
   }
-  getUserData(): Observable<{ status: number, data: User }> {
-    return this._http.get<{ status: number, data: User }>(`${this.apiUr}/user`, { headers: this.headers })
+  getUserData(): Observable<{ status: number; data: User }> {
+    return this._http.get<{ status: number; data: User }>(
+      `${this.apiUr}/user`,
+      { headers: this.headers }
+    )
   }
-
 }

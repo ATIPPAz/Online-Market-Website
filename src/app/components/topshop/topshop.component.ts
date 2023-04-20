@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core'
 
-
-
 @Component({
   selector: 'app-topshop',
   templateUrl: './topshop.component.html',
@@ -9,7 +7,6 @@ import { Component, Input } from '@angular/core'
 })
 export class TopshopComponent {
   @Input('randomShopData') randomShopData = []
-
 
   // data: TopShop[] = [
   //   {
