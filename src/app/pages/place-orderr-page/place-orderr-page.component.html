@@ -4,16 +4,18 @@
     <div class="row">
       <div class="col">
         <div class="row">
-          <p class="font name">ชื่อผู้ใช้ {{user.firstName +' '+user.lastName}}</p>
+          <p class="font name">
+            ชื่อผู้ใช้ {{ user.firstName + ' ' + user.lastName }}
+          </p>
         </div>
         <div class="row">
-          <p class="font name">เบอร์โทรศัพท์ {{user.phone}}</p>
+          <p class="font name">เบอร์โทรศัพท์ {{ user.phone }}</p>
         </div>
       </div>
       <div class="col">
         <p class="font name">
           ที่อยู่ :
-          {{user.address}}
+          {{ user.address }}
         </p>
       </div>
       <!-- <div class="col">
@@ -23,18 +25,27 @@
   </div>
   <br />
   <div class="bg-white contact-space">
-    <p style="font-weight: bold;font-size: 36px;">Product Ordered</p>
+    <p style="font-weight: bold; font-size: 36px">Product Ordered</p>
     <br />
     <div class="row">
       <div class="col-md-6">
-        <img [src]="productData.productCoverImg" alt="coconut" class="img w-100 h-100" style="padding-bottom: 24px;" />
+        <img
+          [src]="productData.productCoverImg"
+          alt="coconut"
+          class="img w-100 h-100"
+          style="padding-bottom: 24px"
+        />
       </div>
       <div class="col-md-6">
         <p class="namePro">ชื้อสินค้า</p>
-        <p class="price">THB{{productData.productPrice}}</p>
-        <p class="que">Quantity: {{productData.productQty}} </p>
-        <div style="width: 20px;">
-          <app-spinner [max]="productData.productQty" [min]="1" (changeValue)="getQty($event)" />
+        <p class="price">THB{{ productData.productPrice }}</p>
+        <p class="que">Quantity: {{ productData.productQty }}</p>
+        <div style="width: 20px">
+          <app-spinner
+            [max]="productData.productQty"
+            [min]="1"
+            (changeValue)="getQty($event)"
+          />
         </div>
 
         <!-- <button _ngcontent-rud-c78="" onclick="history.go(1)" class="bottonbin bg-white">
@@ -51,17 +62,26 @@
       <hr />
       <div>
         <p Align="right">
-          Merchandise Subtotal: {{productData.productPrice * qty || 0}} THB
+          Merchandise Subtotal: {{ productData.productPrice * qty || 0 }} THB
         </p>
         <p Align="right">
-          Shipping : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{shipping}} THB
+          Shipping : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          {{ shipping }} THB
         </p>
         <p Align="right">
-          Total Payment: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{shipping + productData.productPrice * qty || 0}} THB
+          Total Payment: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{
+            shipping + productData.productPrice * qty || 0
+          }}
+          THB
         </p>
       </div>
       <div align="right">
-        <button (click)="buyOrder()" _ngcontent-slo-c82="" onclick="history.go(1)" class="btn bg-main-color">
+        <button
+          (click)="buyOrder()"
+          _ngcontent-slo-c82=""
+          onclick="history.go(1)"
+          class="btn bg-main-color"
+        >
           Place Order
         </button>
       </div>

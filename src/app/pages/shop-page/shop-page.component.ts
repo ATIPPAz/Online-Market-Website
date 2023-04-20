@@ -19,23 +19,30 @@ export class ShopPageComponent {
   catagoryId: string = ''
   catagoriesData: Catagory[] = []
   productData: Product[] = []
-  constructor(private routedata: ActivatedRoute, private api: ApiService) { }
+  constructor(private routedata: ActivatedRoute, private api: ApiService) {}
   ngOnInit(): void {
     this.shopId = this.routedata.snapshot.paramMap.get('shopId')
-    this.api.Api().shop.getOne(this.shopId).subscribe((e) => {
-      this.shopData = e.data
-      this.shopName = this.shopData.shopName
+    this.api
+      .Api()
+      .shop.getOne(this.shopId)
+      .subscribe((e) => {
+        this.shopData = e.data
+        this.shopName = this.shopData.shopName
+      })
 
-
-    })
-
-    this.api.Api().product.getAll(`shopId=${this.shopId}`).subscribe((e) => {
-      this.productData = e.data
-      console.log(this.productData);
-    })
-    this.api.Api().catagory.getAll().subscribe((e) => {
-      this.catagoriesData = e.data
-    })
+    this.api
+      .Api()
+      .product.getAll(`shopId=${this.shopId}`)
+      .subscribe((e) => {
+        this.productData = e.data
+        console.log(this.productData)
+      })
+    this.api
+      .Api()
+      .catagory.getAll()
+      .subscribe((e) => {
+        this.catagoriesData = e.data
+      })
   }
   getCatagory() {
     const catagoty = this.catagoriesData.find(
@@ -48,8 +55,9 @@ export class ShopPageComponent {
   }
   fecthDataWithCatagory(id) {
     this.catagoryId = id
-    this.api.Api().product
-      .getAll(`shopId=${this.shopId}&catagoryId=${id}`)
+    this.api
+      .Api()
+      .product.getAll(`shopId=${this.shopId}&catagoryId=${id}`)
       .subscribe((r) => {
         this.productData = r.data
       })

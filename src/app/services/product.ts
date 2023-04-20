@@ -15,15 +15,17 @@ export class ProductApi {
     queryString: string = null
   ): Observable<{ status: number; data: Product[] }> {
     return this._http.get<{ status: number; data: Product[] }>(
-      `${this.url}/product?${queryString ? queryString : ''}`
-      , { headers: this.headers })
+      `${this.url}/product?${queryString ? queryString : ''}`,
+      { headers: this.headers }
+    )
   }
   getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Product }> {
     return this._http.get<{ status: number; data: Product }>(
-      `${this.url}/product/${id}?${queryString ? queryString : ''}`
-      , { headers: this.headers })
+      `${this.url}/product/${id}?${queryString ? queryString : ''}`,
+      { headers: this.headers }
+    )
   }
 }

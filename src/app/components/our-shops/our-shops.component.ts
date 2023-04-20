@@ -13,12 +13,14 @@ export class OurShopsComponent {
       marketTitle: 'Category Food and Beverages',
       shopName: 'Coco.nut_katiishappy',
       shopId: '1',
+      marketId: '1',
     },
     {
       marketImg:
         'https://media.discordapp.net/attachments/1079420055776940043/1094531619076972554/image_40.png?width=261&height=321',
       marketTitle: 'Category Food and Beverages',
       shopName: 'Coco.nut_katiishappy',
+      marketId: '1',
       shopId: '2',
     },
     {
@@ -26,6 +28,7 @@ export class OurShopsComponent {
         'https://media.discordapp.net/attachments/1079420055776940043/1094531619337031690/image_42.png?width=261&height=321',
       marketTitle: 'Category Food and Beverages',
       shopName: 'Coco.nut_katiishappy',
+      marketId: '1',
       shopId: '3',
     },
     {
@@ -33,6 +36,7 @@ export class OurShopsComponent {
         'https://media.discordapp.net/attachments/1079420055776940043/1094531619576094791/image_44.png?width=261&height=321',
       marketTitle: 'ตลาดเลียบด่วน',
       shopName: 'Wantong Cafe',
+      marketId: '1',
       shopId: '4',
     },
     {
@@ -40,6 +44,7 @@ export class OurShopsComponent {
         'https://img.wongnai.com/p/400x0/2017/02/20/12f9eac5d4b7424b988fceab76b6f8a5.jpg',
       marketTitle: 'ตลาดเลียบด่วน',
       shopName: 'Come Waan',
+      marketId: '1',
       shopId: '5',
     },
     {
@@ -47,6 +52,7 @@ export class OurShopsComponent {
         'https://media.discordapp.net/attachments/1079420055776940043/1094531619815182377/image_46.png?width=261&height=321',
       marketTitle: 'ตลาดเลียบด่วน',
       shopName: 'bfox_kitchen',
+      marketId: '1',
       shopId: '6',
     },
     {
@@ -54,6 +60,7 @@ export class OurShopsComponent {
         'https://media.discordapp.net/attachments/1079420055776940043/1094531620876341258/image_52.png?width=261&height=321',
       marketTitle: 'ตลาดนัดรถไฟศรีนครินทร์',
       shopName: 'ไอติมหม้อไฟยศเส',
+      marketId: '1',
       shopId: '7',
     },
     {
@@ -61,6 +68,7 @@ export class OurShopsComponent {
         'https://media.discordapp.net/attachments/1079420055776940043/1094531620586922095/image_50.png?width=261&height=321',
       marketTitle: 'ตลาดนัดรถไฟศรีนครินทร์',
       shopName: 'ฝุ่นตลบ',
+      marketId: '1',
       shopId: '8',
     },
   ]

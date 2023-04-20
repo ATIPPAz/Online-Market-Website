@@ -1,6 +1,4 @@
 export interface Favorite {
-  userId: string,
-  like: [
-    { shopId: string, product: string[] }
-  ]
+  userId: string
+  like: [{ shopId: string; product: string[] }]
 }

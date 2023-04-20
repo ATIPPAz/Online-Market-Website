@@ -15,15 +15,17 @@ export class CatagoryApi {
     queryString: string = null
   ): Observable<{ status: number; data: Catagory[] }> {
     return this._http.get<{ status: number; data: Catagory[] }>(
-      `${this.apiUr}/catagory?${queryString ? queryString : ''}`
-      , { headers: this.headers })
+      `${this.apiUr}/catagory?${queryString ? queryString : ''}`,
+      { headers: this.headers }
+    )
   }
   getOne(
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Catagory }> {
     return this._http.get<{ status: number; data: Catagory }>(
-      `${this.apiUr}/catagory/${id}?${queryString ? queryString : ''}`
-      , { headers: this.headers })
+      `${this.apiUr}/catagory/${id}?${queryString ? queryString : ''}`,
+      { headers: this.headers }
+    )
   }
 }

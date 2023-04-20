@@ -1,26 +1,38 @@
 <!-- <div class="container-fluid bg-white contact-space contact-box"> -->
 <div class="container-fluid bg-white contact-space">
   <p class="title bc">
-    <a [href]="'market/'+market.marketId" style="color: black;"> {{ market.marketName }}</a> > <a
-      [href]="'market/'+market.marketId+'/shop/'+shop.shopId" style="color: black;">{{
-      shop.shopName
-      }}</a> > {{
-    product.productName }}
+    <a [href]="'market/' + market.marketId" style="color: black">
+      {{ market.marketName }}</a
+    >
+    >
+    <a
+      [href]="'market/' + market.marketId + '/shop/' + shop.shopId"
+      style="color: black"
+      >{{ shop.shopName }}</a
+    >
+    > {{ product.productName }}
   </p>
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col">
         <div class="row">
-          <img [src]="product.productCoverImg" [alt]="product.productName"
-            style="width: 100%; height: 100%; object-fit: cover" />
+          <img
+            [src]="product.productCoverImg"
+            [alt]="product.productName"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
         </div>
         <div class="row">
           <div class="col-4" *ngFor="let img of product.productImg">
-            <img [src]="img" [alt]="product.productName" style="width: 100%; height: 100%; object-fit: cover" />
+            <img
+              [src]="img"
+              [alt]="product.productName"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
           </div>
         </div>
       </div>
-      <div class="col" style="height: auto ;position: relative;">
+      <div class="col" style="height: auto; position: relative">
         <div class="row">
           <div class="row font">
             <p class="Coconutky">{{ product.productName }}</p>
@@ -33,13 +45,14 @@
         </div>
         <div class="row">
           <!-- {{qty}} -->
-          <p style="position: absolute;bottom: 12px;left: 12px;"><b>Quantity : </b> {{ product.productQty }} <b>ชิ้น</b>
+          <p style="position: absolute; bottom: 12px; left: 12px">
+            <b>Quantity : </b> {{ product.productQty }} <b>ชิ้น</b>
           </p>
           <!-- <div class="spinner-width">
             <app-spinner (changeValue)="getQty($event)" [max]="product.productQty" [min]="1" />
           </div> -->
         </div>
-        <div class="row ">
+        <div class="row">
           <!-- <div class="col">
             <a onclick="history.go(1)" class="btn btn-info">
               <div class="d-flex">
@@ -64,14 +77,16 @@
           </div> -->
           <div class="col h-100">
             <div>
-              <button (click)="createOrder()" class="btn bg-main-color"
-                style="position: absolute;bottom: 12px;right: 12px;">
+              <button
+                (click)="createOrder()"
+                class="btn bg-main-color"
+                style="position: absolute; bottom: 12px; right: 12px"
+              >
                 <div class="d-flex">
                   <div class="my-auto">Place Order</div>
                 </div>
               </button>
             </div>
-
           </div>
         </div>
       </div>
