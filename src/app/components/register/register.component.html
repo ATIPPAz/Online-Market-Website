@@ -1,70 +1,38 @@
 <div>
   <div class="text-center logo-gap">
-    <img
-      src="../../../assets/icons/PAIMARKET.svg"
-      class="text-center"
-      alt="SVG Image"
-    />
+    <img src="../../../assets/icons/PAIMARKET.svg" class="text-center" alt="SVG Image" />
   </div>
   <div class="register-container">
     <div class="row">
       <div class="col-12 col-lg-6 col-xs-6 col-md-6 input-gap">
         <label class="form-label text-muted">Firstname</label>
-        <input
-          type="text"
-          [(ngModel)]="firstName"
-          class="form-control input-text-market"
-        />
+        <input type="text" [(ngModel)]="firstName" class="form-control input-text-market" />
       </div>
       <div class="col-12 col-lg-6 col-xs-6 col-md-6 input-gap">
         <label class="form-label text-muted">Lastname</label>
-        <input
-          type="text"
-          [(ngModel)]="lastName"
-          class="form-control input-text-market"
-        />
+        <input type="text" [(ngModel)]="lastName" class="form-control input-text-market" />
       </div>
       <div class="col-12 col-lg-6 col-xs-6 col-md-6">
         <label class="form-label text-muted">Username</label>
-        <input
-          type="text"
-          [(ngModel)]="username"
-          class="form-control input-text-market input-gap"
-        />
+        <input type="text" [(ngModel)]="username" class="form-control input-text-market input-gap" />
         <label class="form-label text-muted">Password</label>
-        <input
-          type="text"
-          [(ngModel)]="password"
-          class="form-control input-text-market input-gap"
-        />
+        <input type="password" [(ngModel)]="password" class="form-control input-text-market input-gap" />
         <label class="form-label text-muted">Phone</label>
-        <input
-          type="text"
-          [(ngModel)]="phone"
-          class="form-control input-text-market input-gap"
-        />
+        <input type="text" [(ngModel)]="phone" class="form-control input-text-market input-gap" />
       </div>
       <div class="col-12 col-lg-6 col-xs-6 col-md-6">
         <label class="form-label text-muted">Address</label>
 
-        <textarea
-          class="form-control input-text-market"
-          [(ngModel)]="address"
-          style="
+        <textarea class="form-control input-text-market" [(ngModel)]="address" style="
             resize: none;
             font-size: 16px;
             line-height: 1.5;
             height: calc(100% - 45px);
-          "
-        ></textarea>
+          "></textarea>
       </div>
       <div class="col-12 input-gap">
         <label class="form-label text-muted">Email</label>
-        <input
-          type="text"
-          [(ngModel)]="email"
-          class="form-control input-text-market input-gap"
-        />
+        <input type="text" [(ngModel)]="email" class="form-control input-text-market input-gap" />
       </div>
     </div>
     <div class="d-flex justify-content-center align-items-center input-gap">
@@ -72,8 +40,7 @@
     </div>
     <div class="d-flex justify-content-center align-items-center">
       Have an account?&nbsp;<a routerLink="/login" class="main-color">
-        Log In</a
-      >
+        Log In</a>
     </div>
   </div>
 </div>
