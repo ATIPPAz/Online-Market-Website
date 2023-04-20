@@ -13,8 +13,8 @@ export class ProduceComponent {
   @Input('product') product: Product
   likeData: Favorite
   liked: boolean = false
-  img: string = ''
-  constructor(private router: Router, private api: ApiService) {}
+  img: string = 'https://img.icons8.com/ios-glyphs/30/FD7E14/hearts.png'
+  constructor(private router: Router, private api: ApiService) { }
   ngOnInit(): void {
     console.log(this.product)
     this.href = this.router.url + `/product/${this.product.productId}`
@@ -40,7 +40,7 @@ export class ProduceComponent {
           }
         }
         this.img = this.liked
-          ? 'https://www.freeiconspng.com/uploads/heart-png-15.png'
+          ? 'https://img.icons8.com/ios-glyphs/30/FD7E14/like--v1.png'
           : 'https://img.icons8.com/ios-glyphs/30/FD7E14/hearts.png'
         console.log(this.img)
       })
