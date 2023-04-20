@@ -1,20 +1,18 @@
-<div class="card w-100 h-100">
-  <div class="box">dsa
+<div class="card card-hover w-100 h-100">
+  <div class="box w-100 h-100 p-4">
     <img (click)="like()" [src]="img" class="like-icon" alt="like" />
-
-
-
     <div class="content">
       <a routerLink="{{ href }}">
-        <img [src]="product.productCoverImg" style="width: 100%;height: 320px;object-fit: cover;" alt="Denim Jeans"
+        <img [src]="product.productCoverImg" style="width: 100%;height: 350px;object-fit: cover;" alt="Denim Jeans"
           class="img rounded mx-auto d-block" /></a>
       <a routerLink="{{ href }}">
-        <h1 class="color1">{{ product.productName }}</h1>
-        <p class="color2">{{ product.productDescribe }}</p>
+        <h1 class="color1" style="margin-top: 24px;">{{ product.productName }}</h1>
+        <div class="color2 text-truncate">{{ product.productDescribe }}</div>
       </a>
       <p>
-        <span style="color: #f3692e">{{ product.productPrice }} ฿</span>
+        <span style="color: #f3692e;">{{ product.productPrice }} ฿</span>
       </p>
+      <a routerLink="{{ href }}" class="btn bg-main-color float">ดูรายละเอียดสินค้า</a>
     </div>
   </div>
 </div>

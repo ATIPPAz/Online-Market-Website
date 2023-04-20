@@ -1,7 +1,11 @@
 <!-- <div class="container-fluid bg-white contact-space contact-box"> -->
 <div class="container-fluid bg-white contact-space">
   <p class="title bc">
-    {{ market.marketName }} |async> {{ shop.shopName }}|async > {{ product.productName }}|async
+    <a [href]="'market/'+market.marketId" style="color: black;"> {{ market.marketName }}</a> > <a
+      [href]="'market/'+market.marketId+'/shop/'+shop.shopId" style="color: black;">{{
+      shop.shopName
+      }}</a> > {{
+    product.productName }}
   </p>
   <div class="container-fluid">
     <div class="row justify-content-center">
@@ -28,14 +32,14 @@
           </div>
         </div>
         <div class="row">
-          {{qty}}
-          <p style="margin-top: 200px">Quantity : {{ product.productQty }}</p>
-          <div class="spinner-width">
+          <!-- {{qty}} -->
+          <p style="margin-top: 200px">Quantity : {{ product.productQty }} ชิ้น</p>
+          <!-- <div class="spinner-width">
             <app-spinner (changeValue)="getQty($event)" [max]="product.productQty" [min]="1" />
-          </div>
+          </div> -->
         </div>
         <div class="row">
-          <div class="col">
+          <!-- <div class="col">
             <a onclick="history.go(1)" class="btn btn-info">
               <div class="d-flex">
                 <div class="my-auto">
@@ -44,8 +48,8 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col">
+          </div> -->
+          <!-- <div class="col">
             <a onclick="history.go(1)" class="btn btn-info">
               <div class="d-flex">
                 <div class="my-auto">
@@ -56,9 +60,9 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
           <div class="col">
-            <button (click)="createOrder()" class="btn btn-info">
+            <button (click)="createOrder()" class="btn bg-main-color">
               <div class="d-flex">
                 <div class="my-auto">Place Order</div>
               </div>
