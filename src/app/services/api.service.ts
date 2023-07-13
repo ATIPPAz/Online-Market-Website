@@ -18,7 +18,7 @@ import { FavoriteApi } from './favorite'
 export class ApiService {
   headers: HttpHeaders
   apiUr: string =
-    'https://96ea-2001-fb1-90-21ca-c42b-a878-2e33-9c60.ngrok-free.app/api/v1'
+    'https://test-6cezw8fai-atippaz-s-team.vercel.app/api/v1'
   token: string
   constructor(private _http: HttpClient, private router: Router) {
     this.token = localStorage.getItem('userToken')
