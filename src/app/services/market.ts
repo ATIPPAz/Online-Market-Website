@@ -15,8 +15,8 @@ export class MarketApi {
     id: string,
     queryString: string = null
   ): Observable<{ status: number; data: Market }> {
+     console.log(this.apiUr)
     return this._http.get<{ status: number; data: Market }>(
-      console.log(this.apiUr)
       `${this.apiUr}/market/${id}?${queryString ? queryString : ''}`,
       { headers: this.headers }
     )
